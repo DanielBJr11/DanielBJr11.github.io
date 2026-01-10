@@ -55,9 +55,7 @@
         <h2>Perfil</h2>
 
         <p style="line-height:1.6;">
-          Estudiante de Economía con formación técnica y universitaria, con interés en el análisis económico aplicado, el ordenamiento territorial y el desarrollo sostenible. He participado en procesos de investigación académica orientados al estudio de problemáticas sociales y territoriales, así como en el análisis financiero de organizaciones en contextos institucionales.
-        
-          He desarrollado actividades relacionadas con la revisión y organización de información económica y financiera, análisis de datos y elaboración de insumos para la toma de decisiones. Me interesa fortalecer mi perfil en investigación, análisis económico y financiero, y en la formulación de propuestas orientadas al diseño de políticas públicas y al desarrollo regional.
+          Estudiante de Economía con formación técnica y universitaria, interesado en el análisis económico aplicado, el ordenamiento territorial y el desarrollo sostenible, con experiencia en procesos de investigación académica sobre problemáticas sociales y territoriales, así como en el análisis financiero de organizaciones en contextos institucionales; he desarrollado actividades de revisión y organización de información económica y financiera, análisis de datos y elaboración de insumos para la toma de decisiones, y busco fortalecer mi perfil en investigación, análisis económico y financiero, así como en la formulación de propuestas orientadas al diseño de políticas públicas y al desarrollo regional.
         </p>
 
         <h2 style="margin-top:35px;">Secciones</h2>
