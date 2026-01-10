@@ -1,47 +1,65 @@
-<div style="display: flex; gap: 40px; align-items: flex-start;">
+<div style="
+  max-width: 900px;
+  margin: 60px auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
+  color: #24292f;
+">
 
-  <!-- COLUMNA IZQUIERDA -->
-  <div style="width: 220px; text-align: center;">
+  <div style="display: flex; gap: 50px; align-items: flex-start;">
 
-    <img src="Imagen fondo azul.png"
-         alt="Daniel Betancur"
-         style="
-           width: 180px;
-           height: 180px;
-           object-fit: cover;
-           border-radius: 50%;
-         " />
+    <!-- COLUMNA IZQUIERDA -->
+    <div style="width: 220px; text-align: center;">
 
-    <h2 style="color: #1f6feb; margin-top: 15px; margin-bottom: 5px;">
-      Daniel Betancur
-    </h2>
+      <img src="Imagen fondo azul.png"
+           alt="Daniel Betancur"
+           style="
+             width: 180px;
+             height: 180px;
+             object-fit: cover;
+             border-radius: 50%;
+           " />
 
-    <p style="margin-top: 0; font-size: 16px;">
-      Estudiante de Economía
-    </p>
+      <h2 style="
+        color: #1f6feb;
+        margin-top: 18px;
+        margin-bottom: 6px;
+        font-weight: 600;
+      ">
+        Daniel Betancur
+      </h2>
 
-  </div>
+      <p style="
+        margin-top: 0;
+        font-size: 16px;
+        color: #57606a;
+      ">
+        Estudiante de Economía
+      </p>
 
-  <!-- COLUMNA DERECHA -->
-  <div style="max-width: 600px;">
+    </div>
 
-    <h2>Perfil</h2>
+    <!-- COLUMNA DERECHA -->
+    <div style="max-width: 560px;">
 
-    <p>
-      Interés en análisis económico, economía urbana y temas sociales.
-    </p>
+      <h2 style="margin-top: 0;">Perfil</h2>
 
-    <h2>Investigaciones</h2>
+      <p>
+        Interés en análisis económico, economía urbana y temas sociales.
+      </p>
 
-    <p>
-      Este espacio reúne algunos trabajos académicos realizados durante mi formación universitaria.
-    </p>
+      <h2>Investigaciones</h2>
 
-    <ul>
-      <li>Análisis económico aplicado (próximamente)</li>
-      <li>Economía urbana y territorio (próximamente)</li>
-      <li>Problemáticas sociales desde la economía (próximamente)</li>
-    </ul>
+      <p>
+        Este espacio reúne algunos trabajos académicos realizados durante mi formación universitaria.
+      </p>
+
+      <ul>
+        <li>Análisis económico aplicado</li>
+        <li>Economía urbana y territorio</li>
+        <li>Problemáticas sociales desde la economía</li>
+      </ul>
+
+    </div>
 
   </div>
 
