@@ -1,5 +1,5 @@
 <p align="left">
-  <img src="Imagen fondo azul.png" width="160" style="border-radius: 50%;" />
+<img src="Imagen fondo azul.png" width="160" style="border-radius: 50%;" />
 </p>
 
 # Daniel Betancur
