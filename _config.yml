@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
+
 title: Daniel Betancur
-description: Estudiante de Economía | Análisis económico ambiental y urbano
+description: Estudiante de Economía  
+logo: Imagen fondo blanco.png
+
+show_downloads: false
