@@ -1,3 +1,7 @@
+<p align="left">
+  <img src="perfil.jpg" width="160" style="border-radius: 50%;" />
+</p>
+
 # Daniel Betancur
 
 Estudiante de Economía
