@@ -64,7 +64,6 @@
           <li><a href="educacion">Educación</a></li>
           <li><a href="experiencia">Experiencia</a></li>
           <li><a href="investigaciones">Investigaciones</a></li>
-          <li><a href="contacto">Contacto</a></li>
         </ul>
 
       </div>
