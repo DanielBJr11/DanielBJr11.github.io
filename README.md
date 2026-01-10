@@ -4,20 +4,29 @@
 ">
 
   <div style="
-    max-width: 900px;
+    max-width: 920px;
     margin: auto;
     background: white;
     border-radius: 14px;
-    padding: 50px;
+    padding: 50px 60px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
     color: #24292f;
   ">
 
-    <div style="display: flex; gap: 50px; align-items: flex-start;">
+    <div style="
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      align-items: flex-start;
+    ">
 
       <!-- COLUMNA IZQUIERDA -->
-      <div style="width: 220px; text-align: center;">
+      <div style="
+        width: 240px;
+        text-align: center;
+        flex-shrink: 0;
+      ">
 
         <img src="Imagen fondo azul.png"
              alt="Daniel Betancur"
@@ -29,55 +38,33 @@
                box-shadow: 0 6px 18px rgba(0,0,0,0.12);
              " />
 
-        <h2 style="
-          color: #1f6feb;
-          margin-top: 18px;
-          margin-bottom: 4px;
-          font-weight: 600;
-          letter-spacing: 0.3px;
-        ">
+        <h2 style="color:#1f6feb; margin-top:18px; margin-bottom:4px;">
           Daniel Betancur
         </h2>
 
-        <p style="
-          margin-top: 0;
-          font-size: 15px;
-          color: #57606a;
-        ">
-          Estudiante de Economía
+        <p style="margin:0; color:#57606a;">
+          Estudiante de Economía<br>
+          Universidad de los Llanos
         </p>
 
       </div>
 
       <!-- COLUMNA DERECHA -->
-      <div style="max-width: 560px;">
+      <div style="width:500px;">
 
-        <h2 style="
-          margin-top: 0;
-          font-weight: 600;
-          border-bottom: 1px solid #eaecef;
-          padding-bottom: 6px;
-        ">
-          Perfil
-        </h2>
+        <h2>Perfil</h2>
 
-        <p style="line-height: 1.6;">
-          Interés en análisis económico, economía urbana y temas sociales, con enfoque en problemáticas territoriales y dinámicas urbanas.
+        <p style="line-height:1.6;">
+          Estudiante de Economía de la Universidad de los Llanos, con formación técnica y universitaria, con interés en el análisis económico aplicado, el ordenamiento territorial y el desarrollo sostenible. He participado en procesos de investigación académica y en el análisis financiero de organizaciones en contextos institucionales.
         </p>
 
-        <h2 style="
-          margin-top: 35px;
-          font-weight: 600;
-          border-bottom: 1px solid #eaecef;
-          padding-bottom: 6px;
-        ">
-          Investigaciones
-        </h2>
+        <h2 style="margin-top:35px;">Secciones</h2>
 
-        <ul style="line-height: 1.7; padding-left: 18px;">
-          <li>Análisis económico aplicado</li>
-          <li>Economía urbana y territorio</li>
-          <li>Problemáticas sociales desde la economía</li>
+        <ul style="line-height:1.8;">
+          <li><a href="educacion">Educación</a></li>
+          <li><a href="experiencia">Experiencia</a></li>
+          <li><a href="investigaciones">Investigaciones</a></li>
+          <li><a href="contacto">Contacto</a></li>
         </ul>
 
       </div>
