@@ -4,8 +4,10 @@
   Pasantía en Investigación
 </h3>
 
-<p style="margin:0; font-style:italic;">
-  <a href="documentos/semillero-territorio-ambiente.pdf" target="_blank">
+<p style="margin:0; font-style:italic; color:#57606a;">
+  <a href="documentos/semillero-territorio-ambiente.pdf"
+     target="_blank"
+     style="color:inherit; text-decoration:none;">
     Semillero Territorio y Ambiente
   </a>
 </p>
@@ -19,8 +21,10 @@
   Auxiliar Administrativo
 </h3>
 
-<p style="margin:0; font-style:italic;">
-  <a href="documentos/hcb-porfia-1.pdf" target="_blank">
+<p style="margin:0; font-style:italic; color:#57606a;">
+  <a href="documentos/hcb-porfia-1.pdf"
+     target="_blank"
+     style="color:inherit; text-decoration:none;">
     Asociación de HCB Porfía 1 – Bienestar Familiar
   </a>
 </p>
@@ -33,8 +37,10 @@
   Apoyo Técnico Administrativo
 </h3>
 
-<p style="margin:0; font-style:italic;">
-  <a href="documentos/hcb-porfia-3.pdf" target="_blank">
+<p style="margin:0; font-style:italic; color:#57606a;">
+  <a href="documentos/hcb-porfia-3.pdf"
+     target="_blank"
+     style="color:inherit; text-decoration:none;">
     Asociación de HCB Porfía 3
   </a>
 </p>
