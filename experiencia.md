@@ -1,57 +1,61 @@
-<div style="background-color:#f6f8fa; padding:60px 20px;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiencia</title>
+</head>
 
-  <div style="
-    max-width: 820px;
-    margin: auto;
-    background: white;
-    border-radius: 14px;
-    padding: 50px 60px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
-    color: #24292f;
-  ">
+<body>
 
-        <h2 style="margin-top:35px;">Experiencia</h2>
+  <h2>Experiencia</h2>
 
-        <h3 style="color:#1f6feb; margin-bottom:4px;">
-          Pasantía en Investigación
-        </h3>
+  <!-- PASANTÍA EN INVESTIGACIÓN -->
+  <h3 style="color:#1f6feb;">
+    Pasantía en Investigación
+  </h3>
 
-        <p style="margin:0; font-style:italic;">
-          <a href="documentos/semillero-territorio-ambiente.pdf" target="_blank">
-            Semillero Territorio y Ambiente
-          </a>
-        </p>
+  <p style="font-style:italic; margin-top:4px;">
+    <a href="documentos/semillero-territorio-ambiente.pdf" target="_blank">
+      Semillero Territorio y Ambiente
+    </a>
+  </p>
 
-        <p style="margin-top:8px; line-height:1.6;">
-          Apoyo en procesos de investigación académica, revisión y organización de información,
-          análisis de datos y elaboración de insumos para trabajos investigativos.
-        </p>
+  <p>
+    Apoyo en procesos de investigación académica, revisión y organización de información,
+    análisis de datos y elaboración de insumos para trabajos investigativos.
+  </p>
 
-        <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:20px;">
-          Auxiliar Administrativo
-        </h3>
+  <!-- AUXILIAR ADMINISTRATIVO -->
+  <h3 style="color:#1f6feb; margin-top:24px;">
+    Auxiliar Administrativo
+  </h3>
 
-        <p style="margin:0; font-style:italic;">
-          <a href="documentos/hcb-porfia-1.pdf" target="_blank">
-            Asociación de HCB Porfía 1 – Bienestar Familiar
-          </a>
-        </p>
+  <p style="font-style:italic; margin-top:4px;">
+    <a href="documentos/hcb-porfia-1.pdf" target="_blank">
+      Asociación de HCB Porfía 1 – Bienestar Familiar
+    </a>
+  </p>
 
-        <p style="margin-top:8px; line-height:1.6;">
-          Apoyo en procesos administrativos, organización documental y manejo de información institucional.
-        </p>
+  <p>
+    Apoyo en procesos administrativos, organización documental y manejo de información
+    institucional.
+  </p>
 
-        <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:20px;">
-          Apoyo Técnico Administrativo
-        </h3>
+  <!-- APOYO TÉCNICO ADMINISTRATIVO -->
+  <h3 style="color:#1f6feb; margin-top:24px;">
+    Apoyo Técnico Administrativo
+  </h3>
 
-        <p style="margin:0; font-style:italic;">
-          <a href="documentos/hcb-porfia-3.pdf" target="_blank">
-            Asociación de HCB Porfía 3
-          </a>
-        </p>
+  <p style="font-style:italic; margin-top:4px;">
+    <a href="documentos/hcb-porfia-3.pdf" target="_blank">
+      Asociación de HCB Porfía 3
+    </a>
+  </p>
 
-        <p style="margin-top:8px; line-height:1.6;">
-          Apoyo técnico y administrativo en procesos operativos, control de información y acompañamiento a la gestión institucional.
-        </p>
+  <p>
+    Apoyo técnico y administrativo en procesos operativos, control de información y
+    acompañamiento a la gestión institucional.
+  </p>
+
+</body>
+</html>
