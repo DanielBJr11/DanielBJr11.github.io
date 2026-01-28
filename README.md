@@ -1,68 +1,17 @@
-<div id="experiencia" style="max-width:700px; margin:0 auto;">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Experiencia | Daniel Betancur</title>
+</head>
 
-  <h2>Experiencia</h2>
+<body>
 
-  <!-- PASANTÍA EN INVESTIGACIÓN -->
-  <h3 style="color:#1f6feb; margin-bottom:4px;">
-    Pasantía en Investigación
-  </h3>
+  <div style="max-width:700px; margin:40px auto; font-family:Arial, sans-serif;">
 
-  <p style="margin:0; font-style:italic;">
-    <a href="documentos/semillero-territorio-ambiente.pdf"
-       target="_blank"
-       style="color:#0969da; text-decoration:none;">
-      Semillero Territorio y Ambiente
-    </a>
-  </p>
+    <h2>Experiencia</h2>
 
-  <p style="margin-top:8px; line-height:1.6;">
-    Apoyo en procesos de investigación académica, revisión y organización de información,
-    análisis de datos y elaboración de insumos para trabajos investigativos.
-  </p>
-
-  <!-- AUXILIAR ADMINISTRATIVO -->
-  <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:24px;">
-    Auxiliar Administrativo
-  </h3>
-
-  <p style="margin:0; font-style:italic;">
-    <a href="documentos/hcb-porfia-1.pdf"
-       target="_blank"
-       style="color:#0969da; text-decoration:none;">
-      Asociación de HCB Porfía 1 – Bienestar Familiar
-    </a>
-  </p>
-
-  <p style="margin-top:8px; line-height:1.6;">
-    Apoyo en procesos administrativos, organización documental y manejo de información
-    institucional.
-  </p>
-
-  <!-- APOYO TÉCNICO ADMINISTRATIVO -->
-  <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:24px;">
-    Apoyo Técnico Administrativo
-  </h3>
-
-  <p style="margin:0; font-style:italic;">
-    <a href="documentos/hcb-porfia-3.pdf"
-       target="_blank"
-       style="color:#0969da; text-decoration:none;">
-      Asociación de HCB Porfía 3
-    </a>
-  </p>
-
-  <p style="margin-top:8px; line-height:1.6;">
-    Apoyo técnico y administrativo en procesos operativos, control de información y
-    acompañamiento a la gestión institucional.
-  </p>
-
-</div>
-en procesos de investigación académica sobre problemáticas sociales y territoriales, así como en el análisis financiero de organizaciones en contextos institucionales; he desarrollado actividades de revisión y organización de información económica y financiera, análisis de datos y elaboración de insumos para la toma de decisiones, y busco fortalecer mi perfil en investigación, análisis económico y financiero, así como en la formulación de propuestas orientadas al diseño de políticas públicas y al desarrollo regional.
-    </p>
-
-    <h2 style="margin-top:35px;">Experiencia</h2>
-
-    <!-- PASANTÍA -->
+    <!-- PASANTÍA EN INVESTIGACIÓN -->
     <h3 style="color:#1f6feb; margin-bottom:4px;">
       Pasantía en Investigación
     </h3>
@@ -81,7 +30,7 @@ en procesos de investigación académica sobre problemáticas sociales y territo
     </p>
 
     <!-- AUXILIAR ADMINISTRATIVO -->
-    <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:20px;">
+    <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:24px;">
       Auxiliar Administrativo
     </h3>
 
@@ -98,8 +47,8 @@ en procesos de investigación académica sobre problemáticas sociales y territo
       institucional.
     </p>
 
-    <!-- APOYO TÉCNICO -->
-    <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:20px;">
+    <!-- APOYO TÉCNICO ADMINISTRATIVO -->
+    <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:24px;">
       Apoyo Técnico Administrativo
     </h3>
 
@@ -116,14 +65,14 @@ en procesos de investigación académica sobre problemáticas sociales y territo
       acompañamiento a la gestión institucional.
     </p>
 
-    <h2 style="margin-top:35px;">Secciones</h2>
-
-    <ul style="line-height:1.8;">
-      <li><a href="educacion">Educación</a></li>
-      <li><a href="experiencia">Experiencia</a></li>
-      <li><a href="investigaciones">Investigaciones</a></li>
-    </ul>
+    <!-- ENLACE DE REGRESO -->
+    <p style="margin-top:40px;">
+      <a href="index.html" style="color:#1f6feb; text-decoration:none;">
+        ← Volver a la página principal
+      </a>
+    </p>
 
   </div>
 
-</div>
+</body>
+</html>
