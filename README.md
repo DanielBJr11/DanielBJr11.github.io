@@ -1,45 +1,63 @@
-<div style="
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  align-items: flex-start;
-">
+<div id="experiencia" style="max-width:700px; margin:0 auto;">
 
-  <!-- COLUMNA IZQUIERDA -->
-  <div style="
-    width: 240px;
-    text-align: center;
-    flex-shrink: 0;
-  ">
+  <h2>Experiencia</h2>
 
-    <img src="Imagen fondo azul.png"
-         alt="Daniel Betancur"
-         style="
-           width: 170px;
-           height: 170px;
-           object-fit: cover;
-           border-radius: 50%;
-           box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-         " />
+  <!-- PASANTÍA EN INVESTIGACIÓN -->
+  <h3 style="color:#1f6feb; margin-bottom:4px;">
+    Pasantía en Investigación
+  </h3>
 
-    <h2 style="color:#1f6feb; margin-top:18px; margin-bottom:4px;">
-      Daniel Betancur
-    </h2>
+  <p style="margin:0; font-style:italic;">
+    <a href="documentos/semillero-territorio-ambiente.pdf"
+       target="_blank"
+       style="color:#0969da; text-decoration:none;">
+      Semillero Territorio y Ambiente
+    </a>
+  </p>
 
-    <p style="margin:0; color:#57606a;">
-      Estudiante de Economía<br>
-      Universidad de los Llanos
-    </p>
+  <p style="margin-top:8px; line-height:1.6;">
+    Apoyo en procesos de investigación académica, revisión y organización de información,
+    análisis de datos y elaboración de insumos para trabajos investigativos.
+  </p>
 
-  </div>
+  <!-- AUXILIAR ADMINISTRATIVO -->
+  <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:24px;">
+    Auxiliar Administrativo
+  </h3>
 
-  <!-- COLUMNA DERECHA -->
-  <div style="width:500px;">
+  <p style="margin:0; font-style:italic;">
+    <a href="documentos/hcb-porfia-1.pdf"
+       target="_blank"
+       style="color:#0969da; text-decoration:none;">
+      Asociación de HCB Porfía 1 – Bienestar Familiar
+    </a>
+  </p>
 
-    <h2>Perfil Laboral</h2>
+  <p style="margin-top:8px; line-height:1.6;">
+    Apoyo en procesos administrativos, organización documental y manejo de información
+    institucional.
+  </p>
 
-    <p style="line-height:1.6;">
-      Estudiante de Economía con formación técnica y universitaria, interesado en el análisis económico aplicado, el ordenamiento territorial y el desarrollo sostenible, con experiencia en procesos de investigación académica sobre problemáticas sociales y territoriales, así como en el análisis financiero de organizaciones en contextos institucionales; he desarrollado actividades de revisión y organización de información económica y financiera, análisis de datos y elaboración de insumos para la toma de decisiones, y busco fortalecer mi perfil en investigación, análisis económico y financiero, así como en la formulación de propuestas orientadas al diseño de políticas públicas y al desarrollo regional.
+  <!-- APOYO TÉCNICO ADMINISTRATIVO -->
+  <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:24px;">
+    Apoyo Técnico Administrativo
+  </h3>
+
+  <p style="margin:0; font-style:italic;">
+    <a href="documentos/hcb-porfia-3.pdf"
+       target="_blank"
+       style="color:#0969da; text-decoration:none;">
+      Asociación de HCB Porfía 3
+    </a>
+  </p>
+
+  <p style="margin-top:8px; line-height:1.6;">
+    Apoyo técnico y administrativo en procesos operativos, control de información y
+    acompañamiento a la gestión institucional.
+  </p>
+
+</div>
+en procesos de investigación académica sobre problemáticas sociales y territoriales, así como en el análisis financiero de organizaciones en contextos institucionales; he desarrollado actividades de revisión y organización de información económica y financiera, análisis de datos y elaboración de insumos para la toma de decisiones, y busco fortalecer mi perfil en investigación, análisis económico y financiero, así como en la formulación de propuestas orientadas al diseño de políticas públicas y al desarrollo regional.
     </p>
 
     <h2 style="margin-top:35px;">Experiencia</h2>
