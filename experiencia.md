@@ -24,11 +24,12 @@
 
     <h2>Experiencia</h2>
 
+    <!-- PASANTÍA -->
     <h3 style="color:#1f6feb; margin-bottom:4px;">
       Pasantía en Investigación
     </h3>
 
-    <p style="margin:0; font-style:italic; color:#57606a;">
+    <p style="margin:0; font-style:italic; color:#1f6feb;">
       <a href="documentos/semillero-territorio-ambiente.pdf"
          target="_blank"
          style="color:inherit; text-decoration:none;">
@@ -41,11 +42,12 @@
       análisis de datos y elaboración de insumos para trabajos investigativos.
     </p>
 
+    <!-- AUXILIAR ADMINISTRATIVO -->
     <h3 style="color:#1f6feb; margin-top:24px; margin-bottom:4px;">
       Auxiliar Administrativo
     </h3>
 
-    <p style="margin:0; font-style:italic; color:#57606a;">
+    <p style="margin:0; font-style:italic; color:#1f6feb;">
       <a href="documentos/hcb-porfia-1.pdf"
          target="_blank"
          style="color:inherit; text-decoration:none;">
@@ -57,11 +59,12 @@
       Apoyo en procesos administrativos, organización documental y manejo de información institucional.
     </p>
 
+    <!-- APOYO TÉCNICO -->
     <h3 style="color:#1f6feb; margin-top:24px; margin-bottom:4px;">
       Apoyo Técnico Administrativo
     </h3>
 
-    <p style="margin:0; font-style:italic; color:#57606a;">
+    <p style="margin:0; font-style:italic; color:#1f6feb;">
       <a href="documentos/hcb-porfia-3.pdf"
          target="_blank"
          style="color:inherit; text-decoration:none;">
