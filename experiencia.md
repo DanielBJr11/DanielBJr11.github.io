@@ -11,45 +11,47 @@
     color: #24292f;
   ">
 
-    <h1 style="text-align:center;">Experiencia</h1>
+        <h2 style="margin-top:35px;">Experiencia</h2>
 
-    <hr style="margin:30px 0;">
+        <h3 style="color:#1f6feb; margin-bottom:4px;">
+          Pasantía en Investigación
+        </h3>
 
-    <h3>Pasantía en Investigación</h3>
-    <p>
-      <strong>Semillero Territorio y Ambiente</strong><br>
-      Universidad de los Llanos<br>
-      Desde enero de 2025
-    </p>
+        <p style="margin:0; font-style:italic;">
+          <a href="documentos/semillero-territorio-ambiente.pdf" target="_blank">
+            Semillero Territorio y Ambiente
+          </a>
+        </p>
 
-    <p>
-      Investigación en desarrollo con respecto al ordenamiento territorial del departamento del Meta, específicamente de la subregión del Ariari, orientada al desarrollo sostenible.
-    </p>
+        <p style="margin-top:8px; line-height:1.6;">
+          Apoyo en procesos de investigación académica, revisión y organización de información,
+          análisis de datos y elaboración de insumos para trabajos investigativos.
+        </p>
 
-    <h3>Auxiliar Administrativo</h3>
-    <p>
-      <strong>Asociación de HCB Porfía 1 – Bienestar Familiar</strong><br>
-      Febrero – Diciembre 2025
-    </p>
+        <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:20px;">
+          Auxiliar Administrativo
+        </h3>
 
-    <p>
-      Realicé funciones administrativas y de apoyo operativo en contextos institucionales, brindando soporte a programas de atención a la primera infancia.
-    </p>
+        <p style="margin:0; font-style:italic;">
+          <a href="documentos/hcb-porfia-1.pdf" target="_blank">
+            Asociación de HCB Porfía 1 – Bienestar Familiar
+          </a>
+        </p>
 
-    <h3>Apoyo Técnico Administrativo</h3>
-    <p>
-      <strong>Asociación de HCB Porfía 3</strong><br>
-      Febrero – Diciembre 2023
-    </p>
+        <p style="margin-top:8px; line-height:1.6;">
+          Apoyo en procesos administrativos, organización documental y manejo de información institucional.
+        </p>
 
-    <p>
-      Realicé funciones administrativas y de apoyo operativo en contextos institucionales, brindando soporte a programas de atención a la primera infancia.
-    </p>
+        <h3 style="color:#1f6feb; margin-bottom:4px; margin-top:20px;">
+          Apoyo Técnico Administrativo
+        </h3>
 
-    <div style="text-align:center; margin-top:40px;">
-      <a href="./" style="color:#1f6feb;">← Volver al inicio</a>
-    </div>
+        <p style="margin:0; font-style:italic;">
+          <a href="documentos/hcb-porfia-3.pdf" target="_blank">
+            Asociación de HCB Porfía 3
+          </a>
+        </p>
 
-  </div>
-
-</div>
+        <p style="margin-top:8px; line-height:1.6;">
+          Apoyo técnico y administrativo en procesos operativos, control de información y acompañamiento a la gestión institucional.
+        </p>
