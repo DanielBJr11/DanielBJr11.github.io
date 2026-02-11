@@ -11,7 +11,7 @@
       padding: 0;
     }
     .container {
-      max-width: 950px;
+      max-width: 960px;
       margin: 60px auto;
       background-color: #fff;
       border-radius: 14px;
@@ -20,48 +20,51 @@
     }
     h2 {
       color: #1f6feb;
+      margin-bottom: 30px;
       font-size: 28px;
       border-bottom: 2px solid #1f6feb;
       padding-bottom: 8px;
-      margin-bottom: 40px;
     }
-    h3 {
-      color: #1f6feb;
-      margin-top: 32px;
-      margin-bottom: 12px;
-      font-size: 22px;
-    }
-    p.description {
-      margin-top: 0;
-      margin-bottom: 12px;
-      line-height: 1.6;
-    }
-    .doc-card {
+    .card {
       border: 1px solid #ddd;
-      border-radius: 10px;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
       background-color: #f9f9f9;
-      padding: 18px 20px;
-      max-width: 480px;
-      margin-bottom: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .doc-card h4 {
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+    .card h3 {
       margin: 0 0 8px 0;
       color: #1f6feb;
-      font-size: 18px;
+      font-size: 20px;
     }
-    .doc-card a {
+    .card p {
+      margin: 0 0 10px 0;
+      line-height: 1.6;
+    }
+    .card a {
+      display: inline-block;
       text-decoration: none;
-      color: #1f6feb;
+      background-color: #1f6feb;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
-    .doc-card a:hover {
-      text-decoration: underline;
+    .card a:hover {
+      background-color: #155bb5;
     }
     .back-link {
+      display: inline-block;
       margin-top: 40px;
-      display: block;
-      text-decoration: none;
       color: #1f6feb;
+      text-decoration: none;
       font-weight: bold;
     }
     .back-link:hover {
@@ -73,42 +76,27 @@
 <body>
 
   <div class="container">
-
     <h2>Experiencia</h2>
 
-    <!-- CERTIFICACIONES LABORALES -->
-    <div class="experience-block">
-      <h3>Certificación Laboral como Auxiliar Administrativo</h3>
-      <p class="description">
-        Documento emitido por la Representante Legal de la Asociación de Hogares Comunitarios Porfía Uno que avala que Daniel Steven Betancur Calderón trabajó en dicha entidad desde el 1 de marzo de 2025 hasta el 12 de diciembre de 2025.
-      </p>
-      <div class="doc-card">
-        <h4>CERTIFICA (Asociación Porfía Uno)</h4>
-        <a href="soportes/experiencia/certifica-porfia1.pdf" target="_blank">Ver documento</a>
-      </div>
+    <!-- PASANTÍA / EPI -->
+    <div class="card">
+      <h3>Pasantía en Investigación</h3>
+      <p>Apoyo en procesos de investigación académica, análisis de información y elaboración de insumos para trabajos investigativos.</p>
+      <a href="soportes/experiencia/pasantia-investigacion.pdf" target="_blank">Ver documento</a>
     </div>
 
-    <div class="experience-block">
-      <h3>Certificación Laboral como Apoyo Técnico Administrativo</h3>
-      <p class="description">
-        Constancia laboral que certifica el desempeño de Daniel Steven Betancur Calderón en la Asociación Porfía 3 durante el periodo comprendido entre el 1 de febrero de 2023 y el 15 de diciembre de 2023.
-      </p>
-      <div class="doc-card">
-        <h4>CERTIFICA (Asociación Porfía 3)</h4>
-        <a href="soportes/experiencia/certifica-porfia3.pdf" target="_blank">Ver documento</a>
-      </div>
+    <!-- PORFÍA 1 -->
+    <div class="card">
+      <h3>Apoyo Técnico Administrativo – Porfía 1</h3>
+      <p>Apoyo en procesos administrativos, organización documental y manejo de información institucional.</p>
+      <a href="soportes/experiencia/apoyo-tecnico-porfia-1.pdf" target="_blank">Ver documento</a>
     </div>
 
-    <!-- EXPERIENCIA EN INVESTIGACIÓN -->
-    <div class="experience-block">
-      <h3>Certificado de Pasantía en Investigación y Semillero</h3>
-      <p class="description">
-        Documento firmado por el líder del grupo de investigación "Territorio y Ambiente" de la Universidad de los Llanos. Certifica que el estudiante pertenece al semillero "Territorio y Sociedad" desde enero de 2025 y que realiza su propuesta de grado como Estudiante Pasante en Investigación (EPI).
-      </p>
-      <div class="doc-card">
-        <h4>Constancia (Territorio y Ambiente)</h4>
-        <a href="soportes/experiencia/constancia-territorio.pdf" target="_blank">Ver documento</a>
-      </div>
+    <!-- PORFÍA 3 -->
+    <div class="card">
+      <h3>Apoyo Técnico Administrativo – Porfía 3</h3>
+      <p>Apoyo técnico y administrativo en procesos operativos y acompañamiento a la gestión institucional.</p>
+      <a href="soportes/experiencia/apoyo-tecnico-porfia-3.pdf" target="_blank">Ver documento</a>
     </div>
 
     <a class="back-link" href="index.html">← Volver a la página principal</a>
