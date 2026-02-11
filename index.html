@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -32,9 +33,7 @@
       box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     }
     .profile-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex: 1;
     }
     .profile-info h1 {
       color: #1f6feb;
@@ -42,16 +41,16 @@
       font-size: 32px;
     }
     .profile-info p {
-      margin: 2px 0;
+      margin: 4px 0;
       color: #57606a;
       font-size: 16px;
       line-height: 1.5;
     }
-    .profile-summary {
-      margin-left: 40px;
+    .profile-details {
+      flex: 1;
       color: #24292f;
       font-size: 16px;
-      line-height: 1.6;
+      line-height: 1.5;
     }
     .section {
       margin-top: 50px;
@@ -75,9 +74,6 @@
       padding: 20px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
       transition: transform 0.2s, box-shadow 0.2s;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
     }
     .card:hover {
       transform: translateY(-3px);
@@ -92,7 +88,6 @@
       font-size: 14px;
       line-height: 1.6;
       margin: 0 0 12px 0;
-      flex-grow: 1;
     }
     .card a {
       text-decoration: none;
@@ -103,7 +98,6 @@
       border-radius: 6px;
       font-weight: bold;
       transition: background-color 0.3s;
-      align-self: flex-start;
     }
     .card a:hover {
       background-color: #155bb5;
@@ -117,19 +111,17 @@
     <!-- Header -->
     <div class="header">
       <img class="profile-img" src="Imagen fondo azul.png" alt="Daniel Betancur">
-      
       <div class="profile-info">
         <h1>Daniel Betancur</h1>
         <p>Estudiante de Economía</p>
         <p>Universidad de los Llanos</p>
       </div>
-
-      <div class="profile-summary">
-        Investigador en economía ambiental y sostenible, con experiencia en análisis de proyectos, gestión administrativa y desarrollo de investigaciones en economía regional y turismo sostenible.
+      <div class="profile-details">
+        <p>Investigador en economía ambiental y sostenible, con experiencia en análisis de proyectos y gestión administrativa.</p>
       </div>
     </div>
 
-    <!-- Sección Educación -->
+    <!-- Educación -->
     <div class="section">
       <h2>Educación</h2>
       <div class="cards">
@@ -140,7 +132,7 @@
         </div>
         <div class="card">
           <h3>ESG – Estrategias de Sostenibilidad</h3>
-          <p>Formación en estrategias de sostenibilidad y gestión responsable.</p>
+          <p>Formación en estrategias ESG y gestión responsable.</p>
           <a href="soportes/educacion/esg-estrategias-sostenibilidad.pdf" target="_blank">Ir a documento</a>
         </div>
         <div class="card">
@@ -149,48 +141,48 @@
           <a href="soportes/educacion/introduccion-econometria.pdf" target="_blank">Ir a documento</a>
         </div>
         <div class="card">
-          <h3>Documentos Oficiales – SENA</h3>
-          <p>Acta académica, certificado final y documento oficial TC/CF que certifican formación y calificaciones.</p>
-          <a href="sena.html">Ver detalles</a>
+          <h3>Documentos Oficiales SENA</h3>
+          <p>Acta académica, certificado final y documento oficial TCOCF.</p>
+          <a href="soportes/educacion/sena/acta-academica.pdf" target="_blank">Ir a documento</a>
         </div>
       </div>
     </div>
 
-    <!-- Sección Experiencia -->
+    <!-- Experiencia -->
     <div class="section">
       <h2>Experiencia</h2>
       <div class="cards">
         <div class="card">
           <h3>Pasantía en Investigación</h3>
           <p>Apoyo en procesos de investigación académica, análisis de información y elaboración de insumos.</p>
-          <a href="experiencia.html">Ver detalles</a>
+          <a href="soportes/experiencia/pasantia-investigacion.pdf" target="_blank">Ir a documento</a>
         </div>
         <div class="card">
           <h3>Apoyo Técnico Administrativo – Porfía 1</h3>
-          <p>Gestión administrativa, organización documental y manejo de información institucional.</p>
-          <a href="experiencia.html">Ver detalles</a>
+          <p>Apoyo en procesos administrativos y organización documental.</p>
+          <a href="soportes/experiencia/apoyo-tecnico-porfia-1.pdf" target="_blank">Ir a documento</a>
         </div>
         <div class="card">
           <h3>Apoyo Técnico Administrativo – Porfía 3</h3>
-          <p>Apoyo técnico y administrativo en procesos operativos y acompañamiento a la gestión institucional.</p>
-          <a href="experiencia.html">Ver detalles</a>
+          <p>Apoyo técnico y administrativo en procesos operativos y gestión institucional.</p>
+          <a href="soportes/experiencia/apoyo-tecnico-porfia-3.pdf" target="_blank">Ir a documento</a>
         </div>
       </div>
     </div>
 
-    <!-- Sección Investigaciones -->
+    <!-- Investigaciones -->
     <div class="section">
       <h2>Investigaciones</h2>
       <div class="cards">
         <div class="card">
           <h3>Proyectos Investigativos</h3>
           <p>Acceso a investigaciones en ordenamiento territorial, economía y desarrollo regional.</p>
-          <a href="investigaciones.html">Ver detalles</a>
+          <a href="investigaciones.html#proyectos-investigacion" target="_blank">Ver detalles</a>
         </div>
         <div class="card">
           <h3>Ecohotel Los Arrendajos</h3>
-          <p>Proyecto de turismo sostenible con planificación estratégica, análisis de mercado y gestión de stakeholders.</p>
-          <a href="fases-ecohotel.html">Ver fases</a>
+          <p>Proyecto de turismo sostenible con planificación estratégica, mercado y stakeholders.</p>
+          <a href="fases-ecohotel.html" target="_blank">Ver fases</a>
         </div>
       </div>
     </div>
