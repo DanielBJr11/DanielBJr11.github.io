@@ -18,16 +18,16 @@
       padding: 50px 60px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     }
+    /* Header */
     .header {
       display: flex;
-      gap: 40px;
-      margin-bottom: 40px;
       flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 40px;
     }
     .profile-img-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      text-align: center;
       min-width: 180px;
     }
     .profile-img {
@@ -36,30 +36,29 @@
       object-fit: cover;
       border-radius: 50%;
       box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
-    .profile-edu {
-      text-align: center;
+    .student-info {
       font-size: 16px;
       color: #57606a;
       line-height: 1.5;
     }
     .profile-info {
       flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      min-width: 250px;
     }
     .profile-info h1 {
       color: #1f6feb;
-      margin: 0 0 10px 0;
+      margin: 0 0 8px 0;
       font-size: 32px;
     }
     .profile-info p {
-      margin: 4px 0;
+      margin: 0 0 12px 0;
       font-size: 16px;
       line-height: 1.5;
     }
+
+    /* Sections */
     .section {
       margin-top: 50px;
     }
@@ -116,23 +115,25 @@
 <body>
 
   <div class="container">
-    <!-- Header con perfil -->
+    <!-- Header -->
     <div class="header">
+      <!-- Imagen y estudiante -->
       <div class="profile-img-container">
         <img class="profile-img" src="Imagen fondo azul.png" alt="Daniel Betancur">
-        <div class="profile-edu">
+        <div class="student-info">
           Estudiante de Economía<br>
           Universidad de los Llanos
         </div>
       </div>
+
+      <!-- Perfil laboral a la derecha -->
       <div class="profile-info">
         <h1>Daniel Betancur</h1>
-        <p>Investigador en economía ambiental y sostenible</p>
-        <p>Con experiencia en análisis de proyectos y gestión administrativa</p>
+        <p>Investigador en economía ambiental y sostenible, con experiencia en análisis de proyectos y gestión administrativa.</p>
       </div>
     </div>
 
-    <!-- Educación -->
+    <!-- Secciones -->
     <div class="section">
       <h2>Educación</h2>
       <div class="cards">
@@ -141,63 +142,31 @@
           <p>Acredita los créditos cursados y aprobados dentro del programa académico.</p>
           <a href="educacion.html">Ver detalles</a>
         </div>
-        <div class="card">
-          <h3>ESG – Estrategias de Sostenibilidad</h3>
-          <p>Certificado de formación en estrategias de sostenibilidad, enfoque ESG y gestión responsable.</p>
-          <a href="educacion.html">Ver detalles</a>
-        </div>
-        <div class="card">
-          <h3>Introducción a la Econometría</h3>
-          <p>Formación en fundamentos de econometría, análisis estadístico y modelos básicos.</p>
-          <a href="educacion.html">Ver detalles</a>
-        </div>
-        <div class="card">
-          <h3>Acta Académica</h3>
-          <p>Acta de grado que certifica la culminación y aprobación del proceso formativo.</p>
-          <a href="educacion.html">Ver detalles</a>
-        </div>
-        <div class="card">
-          <h3>Certificado Final</h3>
-          <p>Documento oficial que detalla calificaciones obtenidas y la intensidad horaria total del curso.</p>
-          <a href="educacion.html">Ver detalles</a>
-        </div>
-        <div class="card">
-          <h3>Documento Oficial TCOCF</h3>
-          <p>Certifica la formación y acreditación en el programa Técnico en Contabilización de Operaciones Comerciales y Financieras.</p>
-          <a href="educacion.html">Ver detalles</a>
-        </div>
       </div>
     </div>
 
-    <!-- Experiencia -->
     <div class="section">
       <h2>Experiencia</h2>
       <div class="cards">
         <div class="card">
           <h3>Pasantía en Investigación</h3>
-          <p>Apoyo en procesos de investigación académica, análisis de información y elaboración de insumos para trabajos investigativos.</p>
+          <p>Apoyo en procesos de investigación académica, análisis de información y elaboración de insumos.</p>
           <a href="experiencia.html">Ver detalles</a>
         </div>
         <div class="card">
-          <h3>Apoyo Técnico Administrativo – Porfía 1</h3>
-          <p>Apoyo en procesos administrativos, organización documental y manejo de información institucional.</p>
-          <a href="experiencia.html">Ver detalles</a>
-        </div>
-        <div class="card">
-          <h3>Apoyo Técnico Administrativo – Porfía 3</h3>
-          <p>Apoyo técnico y administrativo en procesos operativos y acompañamiento a la gestión institucional.</p>
+          <h3>Apoyo Técnico Administrativo</h3>
+          <p>Gestión administrativa y acompañamiento en asociaciones comunitarias.</p>
           <a href="experiencia.html">Ver detalles</a>
         </div>
       </div>
     </div>
 
-    <!-- Investigaciones -->
     <div class="section">
       <h2>Investigaciones</h2>
       <div class="cards">
         <div class="card">
           <h3>Proyectos Investigativos</h3>
-          <p>Acceso a trabajos de investigación en ordenamiento territorial, economía y desarrollo regional.</p>
+          <p>Acceso a investigaciones en ordenamiento territorial, economía y desarrollo regional.</p>
           <a href="investigaciones.html">Ver detalles</a>
         </div>
         <div class="card">
