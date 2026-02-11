@@ -11,73 +11,86 @@
       padding: 0;
     }
     .container {
-      max-width: 960px;
+      max-width: 1000px;
       margin: 60px auto;
       background-color: #fff;
       border-radius: 14px;
       padding: 50px 60px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     }
-    .profile {
+    .header {
       display: flex;
-      gap: 60px;
-      align-items: flex-start;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 40px;
     }
-    .profile-left {
-      width: 240px;
-      text-align: center;
-      flex-shrink: 0;
-    }
-    .profile-left img {
-      width: 170px;
-      height: 170px;
+    .profile-img {
+      width: 180px;
+      height: 180px;
       object-fit: cover;
       border-radius: 50%;
       box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     }
-    .profile-left h2 {
+    .profile-info h1 {
       color: #1f6feb;
-      margin-top: 18px;
-      margin-bottom: 4px;
-      font-size: 24px;
+      margin: 0 0 8px 0;
+      font-size: 32px;
     }
-    .profile-left p {
+    .profile-info p {
       margin: 0;
       color: #57606a;
+      font-size: 16px;
       line-height: 1.5;
     }
-    .profile-right {
-      width: 500px;
+    .section {
+      margin-top: 50px;
     }
-    .profile-right h2 {
-      font-size: 24px;
+    .section h2 {
       color: #1f6feb;
-      margin-top: 0;
-      margin-bottom: 12px;
+      font-size: 26px;
       border-bottom: 2px solid #1f6feb;
-      padding-bottom: 6px;
-    }
-    .profile-right p {
-      line-height: 1.6;
+      padding-bottom: 8px;
       margin-bottom: 20px;
     }
-    .sections h2 {
-      font-size: 22px;
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      flex: 1 1 250px;
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+    .card h3 {
+      margin: 0 0 10px 0;
       color: #1f6feb;
-      margin-bottom: 12px;
+      font-size: 20px;
     }
-    .sections ul {
-      line-height: 1.8;
-      padding-left: 20px;
-      margin-top: 0;
+    .card p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0 0 12px 0;
     }
-    .sections ul li a {
+    .card a {
       text-decoration: none;
-      color: #1f6feb;
+      display: inline-block;
+      background-color: #1f6feb;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
-    .sections ul li a:hover {
-      text-decoration: underline;
+    .card a:hover {
+      background-color: #155bb5;
     }
   </style>
 </head>
@@ -85,41 +98,68 @@
 <body>
 
   <div class="container">
-
-    <div class="profile">
-
-      <!-- COLUMNA IZQUIERDA -->
-      <div class="profile-left">
-        <img src="Imagen fondo azul.png" alt="Daniel Betancur">
-        <h2>Daniel Betancur</h2>
-        <p>
-          Estudiante de Economía<br>
-          Universidad de los Llanos
-        </p>
+    <!-- Header -->
+    <div class="header">
+      <img class="profile-img" src="Imagen fondo azul.png" alt="Daniel Betancur">
+      <div class="profile-info">
+        <h1>Daniel Betancur</h1>
+        <p>Estudiante de Economía<br>Universidad de los Llanos</p>
+        <p>Investigador en economía ambiental y sostenible, con experiencia en análisis de proyectos y gestión administrativa.</p>
       </div>
+    </div>
 
-      <!-- COLUMNA DERECHA -->
-      <div class="profile-right">
-        <h2>Perfil Laboral</h2>
-        <p>
-          Estudiante de último semestre de Economía, con interés y experiencia en investigación en 
-          economía ambiental y sostenibilidad. Miembro activo de un semillero de investigación durante varios semestres, 
-          participando en estudios y proyectos relacionados con políticas económicas sostenibles. 
-          Además, he brindado apoyo a asociaciones comunitarias en la gestión administrativa de recursos, 
-          elaborando informes técnicos y financieros para fortalecer su salud económica y optimizar la toma de decisiones.
-        </p>
-
-        <div class="sections">
-          <h2>Secciones</h2>
-          <ul>
-            <li><a href="educacion.html">Educación</a></li>
-            <li><a href="experiencia.html">Experiencia</a></li>
-            <li><a href="investigaciones.html">Investigaciones</a></li>
-          </ul>
+    <!-- Secciones -->
+    <div class="section">
+      <h2>Educación</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Certificado de Créditos</h3>
+          <p>Acredita los créditos cursados y aprobados dentro del programa académico.</p>
+          <a href="educacion.html">Ver detalles</a>
         </div>
-
+        <div class="card">
+          <h3>Econometría</h3>
+          <p>Formación en fundamentos de econometría, análisis estadístico y modelos básicos.</p>
+          <a href="educacion.html">Ver detalles</a>
+        </div>
+        <div class="card">
+          <h3>Acta y Certificados</h3>
+          <p>Documentos oficiales que certifican formación y calificaciones obtenidas.</p>
+          <a href="educacion.html">Ver detalles</a>
+        </div>
       </div>
+    </div>
 
+    <div class="section">
+      <h2>Experiencia</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Pasantía en Investigación</h3>
+          <p>Apoyo en procesos de investigación académica, análisis de información y elaboración de insumos.</p>
+          <a href="experiencia.html">Ver detalles</a>
+        </div>
+        <div class="card">
+          <h3>Apoyo Técnico Administrativo</h3>
+          <p>Gestión administrativa y acompañamiento en asociaciones comunitarias.</p>
+          <a href="experiencia.html">Ver detalles</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Investigaciones</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Proyectos Investigativos</h3>
+          <p>Acceso a investigaciones en ordenamiento territorial, economía y desarrollo regional.</p>
+          <a href="investigaciones.html">Ver detalles</a>
+        </div>
+        <div class="card">
+          <h3>Ecohotel Los Arrendajos</h3>
+          <p>Proyecto de turismo sostenible con planificación estratégica, mercado y stakeholders.</p>
+          <a href="fases-ecohotel.html">Ver fases</a>
+        </div>
+      </div>
     </div>
 
   </div>
