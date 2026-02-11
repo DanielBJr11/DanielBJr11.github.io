@@ -18,11 +18,12 @@
       padding: 50px 60px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     }
+    /* Header */
     .header {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 40px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     .profile-img {
       width: 180px;
@@ -34,6 +35,7 @@
     .profile-info {
       display: flex;
       flex-direction: column;
+      justify-content: center;
     }
     .profile-info h1 {
       color: #1f6feb;
@@ -41,11 +43,17 @@
       font-size: 32px;
     }
     .profile-info p {
-      margin: 2px 0;
+      margin: 0;
       color: #57606a;
       font-size: 16px;
       line-height: 1.5;
     }
+    .profile-details {
+      margin-top: 10px;
+      font-style: italic;
+      color: #24292f;
+    }
+    /* Secciones */
     .section {
       margin-top: 50px;
     }
@@ -56,16 +64,20 @@
       padding-bottom: 8px;
       margin-bottom: 20px;
     }
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
+    /* Cards */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
     .card {
-      flex: 1 1 250px;
-      background: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Botón al fondo */
+      border: 1px solid #ddd;
       border-radius: 12px;
       padding: 20px;
+      background-color: #f9f9f9;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
       transition: transform 0.2s, box-shadow 0.2s;
     }
@@ -84,14 +96,16 @@
       margin: 0 0 12px 0;
     }
     .card a {
-      text-decoration: none;
       display: inline-block;
+      text-decoration: none;
       background-color: #1f6feb;
       color: #fff;
       padding: 8px 14px;
       border-radius: 6px;
       font-weight: bold;
       transition: background-color 0.3s;
+      margin-top: 10px;
+      text-align: center;
     }
     .card a:hover {
       background-color: #155bb5;
@@ -100,15 +114,15 @@
 </head>
 
 <body>
-
   <div class="container">
     <!-- Header -->
     <div class="header">
-      <img class="profile-img" src="Imagen fondo azul.png" alt="Daniel Betancur">
+      <div>
+        <img class="profile-img" src="Imagen fondo azul.png" alt="Daniel Betancur">
+        <p class="profile-details">Estudiante de Economía<br>Universidad de los Llanos</p>
+      </div>
       <div class="profile-info">
         <h1>Daniel Betancur</h1>
-        <p>Estudiante de Economía</p>
-        <p>Universidad de los Llanos</p>
         <p>Investigador en economía ambiental y sostenible, con experiencia en análisis de proyectos y gestión administrativa.</p>
       </div>
     </div>
@@ -116,15 +130,15 @@
     <!-- Secciones -->
     <div class="section">
       <h2>Educación</h2>
-      <div class="cards">
+      <div class="card-container">
         <div class="card">
           <h3>Certificado de Créditos</h3>
           <p>Acredita los créditos cursados y aprobados dentro del programa académico.</p>
-          <a href="educacion.html">Ir a documento</a>
+          <a href="soportes/educacion/certificado-creditos.pdf" target="_blank">Ir a documento</a>
         </div>
         <div class="card">
-          <h3>ESG – Estrategias de Sostenibilidad</h3>
-          <p>Certificado de formación en estrategias ESG y gestión responsable.</p>
+          <h3>Certificados ESG</h3>
+          <p>Formación en estrategias de sostenibilidad y enfoque ESG.</p>
           <a href="soportes/educacion/esg-estrategias-sostenibilidad.pdf" target="_blank">Ir a documento</a>
         </div>
         <div class="card">
@@ -134,15 +148,15 @@
         </div>
         <div class="card">
           <h3>Documentos Oficiales SENA</h3>
-          <p>Acta Académica, Certificado Final y Documento Oficial TCOCF.</p>
-          <a href="sena.html">Ver detalles</a>
+          <p>Acta académica, certificado final y documento oficial TCOCF del programa técnico.</p>
+          <a href="soportes/educacion/sena.html" target="_blank">Ver detalles</a>
         </div>
       </div>
     </div>
 
     <div class="section">
       <h2>Experiencia</h2>
-      <div class="cards">
+      <div class="card-container">
         <div class="card">
           <h3>Pasantía en Investigación</h3>
           <p>Apoyo en procesos de investigación académica, análisis de información y elaboración de insumos.</p>
@@ -150,12 +164,12 @@
         </div>
         <div class="card">
           <h3>Apoyo Técnico Administrativo – Porfía 1</h3>
-          <p>Apoyo en procesos administrativos, organización documental y manejo de información institucional.</p>
+          <p>Gestión administrativa y acompañamiento en asociaciones comunitarias.</p>
           <a href="soportes/experiencia/apoyo-tecnico-porfia-1.pdf" target="_blank">Ir a documento</a>
         </div>
         <div class="card">
           <h3>Apoyo Técnico Administrativo – Porfía 3</h3>
-          <p>Apoyo técnico y administrativo en procesos operativos y acompañamiento a la gestión institucional.</p>
+          <p>Apoyo técnico y operativo en procesos institucionales.</p>
           <a href="soportes/experiencia/apoyo-tecnico-porfia-3.pdf" target="_blank">Ir a documento</a>
         </div>
       </div>
@@ -163,21 +177,20 @@
 
     <div class="section">
       <h2>Investigaciones</h2>
-      <div class="cards">
+      <div class="card-container">
         <div class="card">
           <h3>Proyectos Investigativos</h3>
-          <p>Acceso a trabajos de investigación en ordenamiento territorial, economía y desarrollo regional.</p>
-          <a href="investigaciones.html">Ver detalles</a>
+          <p>Acceso a investigaciones en ordenamiento territorial, economía y desarrollo regional.</p>
+          <a href="investigaciones.html" target="_blank">Ver detalles</a>
         </div>
         <div class="card">
-          <h3>Ecohotel Los Arrendajos</h3>
-          <p>Proyecto de turismo sostenible con planificación estratégica, mercado y stakeholders.</p>
-          <a href="fases-ecohotel.html">Ver fases</a>
+          <h3>Proyecto Ecohotel Los Arrendajos</h3>
+          <p>Desarrollo integral del proyecto de turismo sostenible, incluyendo planificación, análisis de mercado y gestión de actores.</p>
+          <a href="fases-ecohotel.html" target="_blank">Ver detalles</a>
         </div>
       </div>
     </div>
 
   </div>
-
 </body>
 </html>
