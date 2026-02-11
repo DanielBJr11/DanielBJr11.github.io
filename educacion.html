@@ -1,17 +1,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>EDUC | DSBC</title>
+  <title>Educación | DSBC</title>
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f6f8fa;
       color: #24292f;
       margin: 0;
       padding: 0;
     }
     .container {
-      max-width: 900px;
+      max-width: 950px;
       margin: 60px auto;
       background-color: #fff;
       border-radius: 14px;
@@ -20,36 +20,39 @@
     }
     h2 {
       color: #1f6feb;
-      margin-bottom: 20px;
+      font-size: 28px;
+      border-bottom: 2px solid #1f6feb;
+      padding-bottom: 8px;
+      margin-bottom: 40px;
+    }
+    h3 {
+      color: #1f6feb;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      font-size: 22px;
+    }
+    p.description {
+      margin-top: 0;
+      margin-bottom: 12px;
+      line-height: 1.6;
     }
     .doc-card {
       border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 16px;
-      background: #f9f9f9;
-      margin-bottom: 16px;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      padding: 18px 20px;
       max-width: 480px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-bottom: 24px;
     }
-    .doc-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    }
-    .doc-card h3 {
+    .doc-card h4 {
       margin: 0 0 8px 0;
       color: #1f6feb;
       font-size: 18px;
-    }
-    .doc-card p {
-      margin: 0 0 8px 0;
-      line-height: 1.4;
-      font-size: 14px;
     }
     .doc-card a {
       text-decoration: none;
       color: #1f6feb;
       font-weight: bold;
-      font-size: 14px;
     }
     .doc-card a:hover {
       text-decoration: underline;
@@ -68,51 +71,48 @@
 </head>
 
 <body>
-<div class="container">
 
-  <h2>Educación</h2>
+  <div class="container">
 
-  <!-- Documento SENA -->
-  <div class="doc-card">
-    <h3>Diploma de Técnico en Contabilización de Operaciones Comerciales y Financieras</h3>
-    <p>Documento oficial emitido por el Servicio Nacional de Aprendizaje (SENA) que acredita la formación profesional integral de Daniel Steven Betancur Calderón. Fue expedido en Villavicencio el 28 de diciembre de 2020.</p>
-    <a href="soportes/educacion/diploma-sena.pdf" target="_blank">Ver documento</a>
+    <h2>Educación</h2>
+
+    <!-- UNIVERSIDAD -->
+    <div class="education-block">
+      <h3>Economía – Universidad de los Llanos</h3>
+      <p class="description">Estudiante de último semestre, con enfoque en economía ambiental y sostenibilidad.</p>
+      <div class="doc-card">
+        <h4>Certificado Académico</h4>
+        <a href="soportes/educacion/certificado-universidad.pdf" target="_blank">Ver documento</a>
+      </div>
+    </div>
+
+    <!-- SEMILLERO DE INVESTIGACIÓN -->
+    <div class="education-block">
+      <h3>Semillero de Investigación</h3>
+      <p class="description">Participación activa en proyectos de investigación en economía y sostenibilidad.</p>
+      <div class="doc-card">
+        <h4>Certificado de Participación</h4>
+        <a href="soportes/educacion/certificado-semillero.pdf" target="_blank">Ver documento</a>
+      </div>
+    </div>
+
+    <!-- CURSOS COMPLEMENTARIOS -->
+    <div class="education-block">
+      <h3>Cursos Complementarios</h3>
+      <p class="description">Formación adicional en análisis de datos, economía ambiental y sostenibilidad.</p>
+      <div class="doc-card">
+        <h4>Certificado Curso Excel Avanzado</h4>
+        <a href="soportes/educacion/certificado-excel.pdf" target="_blank">Ver documento</a>
+      </div>
+      <div class="doc-card">
+        <h4>Certificado Curso Econometría Básica</h4>
+        <a href="soportes/educacion/certificado-econometria.pdf" target="_blank">Ver documento</a>
+      </div>
+    </div>
+
+    <a class="back-link" href="index.html">← Volver a la página principal</a>
+
   </div>
 
-  <div class="doc-card">
-    <h3>Acta Académica de Graduación Técnica</h3>
-    <p>Registro administrativo (No. 59060452) que formaliza la entrega del título técnico tras cumplir satisfactoriamente los requisitos exigidos por la institución. Incluye la firma digital de la Subdirectora del Centro de Industria y Servicios del Meta.</p>
-    <a href="soportes/educacion/acta-grado.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="doc-card">
-    <h3>Certificado de Notas e Intensidad Horaria</h3>
-    <p>Documento que detalla el rendimiento académico, asignando una evaluación de 4.5 A en módulos como Contabilidad (740 horas), Inglés (180 horas) y Etapa Práctica (880 horas).</p>
-    <a href="soportes/educacion/certificado-notas.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <!-- Documento Universidad de los Llanos -->
-  <div class="doc-card">
-    <h3>Certificado de Avance de Créditos en Economía</h3>
-    <p>Constancia que certifica que el estudiante ha aprobado 152 de los 158 créditos totales (96.2%) del programa de Economía. Fue generada el 22 de diciembre de 2025 por la Oficina de Admisiones, Registro y Control Académico.</p>
-    <a href="soportes/educacion/avance-creditos.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <!-- Certificaciones Udemy -->
-  <div class="doc-card">
-    <h3>Certificado de Finalización: Introducción a la Econometría</h3>
-    <p>Diploma que acredita la realización de un curso de 6 horas bajo la instrucción de Gianfranco David Chamorro Rodriguez, finalizado el 23 de diciembre de 2025.</p>
-    <a href="soportes/educacion/certificado-econometria.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="doc-card">
-    <h3>Certificado de Finalización: ESG Estrategia de Sostenibilidad</h3>
-    <p>Certificación internacional que valida 2.5 horas de estudio sobre sostenibilidad ambiental, social y de gobernanza, completada el 10 de febrero de 2026.</p>
-    <a href="soportes/educacion/certificado-esg.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <a class="back-link" href="index.html">← Volver a la página principal</a>
-
-</div>
 </body>
 </html>
