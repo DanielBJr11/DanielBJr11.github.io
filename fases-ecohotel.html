@@ -11,63 +11,66 @@
       padding: 0;
     }
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: 60px auto;
       background-color: #fff;
       border-radius: 14px;
-      padding: 40px 50px;
+      padding: 50px 60px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     }
     h2 {
-      font-size: 28px;
       color: #1f6feb;
       margin-bottom: 20px;
+      font-size: 28px;
       border-bottom: 2px solid #1f6feb;
-      padding-bottom: 6px;
+      padding-bottom: 8px;
     }
     p.description {
-      margin-top: 0;
-      margin-bottom: 24px;
+      margin-bottom: 30px;
       line-height: 1.6;
+      font-size: 16px;
     }
-    .document-card {
+    .card {
       border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 14px 16px;
-      background: #f9f9f9;
-      max-width: 480px;
-      margin-bottom: 12px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
-    .document-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
     }
-    .document-card h4 {
-      margin: 0 0 6px 0;
+    .card h3 {
+      margin: 0 0 10px 0;
       color: #1f6feb;
-      font-size: 18px;
+      font-size: 20px;
     }
-    .document-card p {
-      margin: 0 0 6px 0;
-      font-size: 14px;
-      line-height: 1.4;
-      color: #24292f;
+    .card p {
+      margin: 0 0 12px 0;
+      line-height: 1.6;
+      font-size: 15px;
     }
-    .document-card a {
+    .card a {
+      display: inline-block;
       text-decoration: none;
-      color: #1f6feb;
+      background-color: #1f6feb;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 6px;
       font-weight: bold;
-      font-size: 14px;
+      transition: background-color 0.3s;
     }
-    .document-card a:hover {
-      text-decoration: underline;
+    .card a:hover {
+      background-color: #155bb5;
     }
     .back-link {
+      display: inline-block;
       margin-top: 40px;
-      display: block;
-      text-decoration: none;
       color: #1f6feb;
+      text-decoration: none;
       font-weight: bold;
     }
     .back-link:hover {
@@ -78,76 +81,84 @@
 
 <body>
 
-<div class="container">
+  <div class="container">
+    <h2>Fases del Proyecto Ecohotel “Los Arrendajos”</h2>
+    <p class="description">
+      Desarrollo integral del proyecto de turismo sostenible “Ecohotel Los Arrendajos”, organizado por fases con sus respectivos documentos de soporte. Cada fase refleja un paso clave en la formulación y planificación del proyecto.
+    </p>
 
-  <h2>Fases del Proyecto Ecohotel “Los Arrendajos”</h2>
-  <p class="description">
-    Desarrollo integral del proyecto de turismo sostenible, organizado por fases con sus respectivos documentos de soporte.
-  </p>
+    <!-- Fase 1: Estudio Normativo -->
+    <div class="card">
+      <h3>Fase 1: Estudio Normativo</h3>
+      <p>Análisis de normativas, regulaciones y requisitos legales aplicables al proyecto Ecohotel.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/estudio-normativo.pdf" target="_blank">Ver documento</a>
+    </div>
 
-  <div class="document-card">
-    <h4>Estudio Normativo</h4>
-    <p>Análisis de normativas, regulaciones y requisitos legales aplicables al proyecto Ecohotel.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/estudio-normativo.pdf" target="_blank">Ver documento</a>
+    <!-- Fase 2: Generalidades del Proyecto -->
+    <div class="card">
+      <h3>Fase 2: Generalidades del Proyecto</h3>
+      <p>Presentación del proyecto Ecohotel Los Arrendajos: objetivos, alcance y contexto general.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/generalidades-del-proyecto-del-ecohotel.pdf" target="_blank">Ver documento</a>
+    </div>
+
+    <!-- Fase 3: Mapa de Valor -->
+    <div class="card">
+      <h3>Fase 3: Mapa de Valor</h3>
+      <p>Representación de la propuesta de valor del Ecohotel y sus elementos estratégicos para clientes y stakeholders.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/mapa-de-valor.pdf" target="_blank">Ver documento</a>
+    </div>
+
+    <!-- Fase 4: Mapeo de Stakeholders -->
+    <div class="card">
+      <h3>Fase 4: Mapeo de Stakeholders</h3>
+      <p>Identificación y análisis de los grupos de interés y actores clave del proyecto.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/mapeo-de-stakeholders.pdf" target="_blank">Ver documento</a>
+    </div>
+
+    <!-- Fase 5: Relación de Actores -->
+    <div class="card">
+      <h3>Fase 5: Relación de Actores</h3>
+      <p>Listado y descripción de los actores involucrados en el desarrollo del Ecohotel.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/relacion-de-actores.pdf" target="_blank">Ver documento</a>
+    </div>
+
+    <!-- Fase 6: Stakeholders -->
+    <div class="card">
+      <h3>Fase 6: Stakeholders</h3>
+      <p>Perfil y responsabilidades de cada stakeholder dentro del proyecto.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/stakeholders.pdf" target="_blank">Ver documento</a>
+    </div>
+
+    <!-- Fase 7: Mercado Potencial -->
+    <div class="card">
+      <h3>Fase 7: Mercado Potencial</h3>
+      <p>Análisis del mercado y la demanda potencial para el Ecohotel Los Arrendajos.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/mercado-potencial-ecohotel.pdf" target="_blank">Ver documento</a>
+    </div>
+
+    <!-- Fase 8: Proyección de Mercado -->
+    <div class="card">
+      <h3>Fase 8: Proyección de Mercado</h3>
+      <p>Estimación de ingresos y demanda a futuro para el proyecto Ecohotel.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/proyeccion-de-mercado.pdf" target="_blank">Ver documento</a>
+    </div>
+
+    <!-- Fase 9: Modelo CANVAS -->
+    <div class="card">
+      <h3>Fase 9: Modelo CANVAS</h3>
+      <p>Representación gráfica de la estructura de negocio y propuesta de valor del Ecohotel.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/modelo-CANVAS.pdf" target="_blank">Ver documento</a>
+    </div>
+
+    <!-- Fase 10: Tipos de Involucrados -->
+    <div class="card">
+      <h3>Fase 10: Tipos de Involucrados</h3>
+      <p>Clasificación de los diferentes tipos de actores y su grado de involucramiento en el proyecto.</p>
+      <a href="soportes/investigaciones/formulacion-de-proyectos/tipos-de-involucrados.pdf" target="_blank">Ver documento</a>
+    </div>
+
+    <a class="back-link" href="investigaciones.html">← Volver a Investigaciones</a>
   </div>
-
-  <div class="document-card">
-    <h4>Generalidades del Proyecto</h4>
-    <p>Presentación del proyecto Ecohotel Los Arrendajos, objetivos, alcance y contexto.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/generalidades-del-proyecto-del-ecohotel.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="document-card">
-    <h4>Mapa de Valor</h4>
-    <p>Representación de la propuesta de valor del Ecohotel y sus elementos estratégicos.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/mapa-de-valor.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="document-card">
-    <h4>Mapeo de Stakeholders</h4>
-    <p>Identificación y análisis de los grupos de interés y actores clave del proyecto.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/mapeo-de-stakeholders.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="document-card">
-    <h4>Relación de Actores</h4>
-    <p>Listado y descripción de los actores involucrados en el desarrollo del Ecohotel.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/relacion-de-actores.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="document-card">
-    <h4>Stakeholders</h4>
-    <p>Perfil y responsabilidades de cada stakeholder dentro del proyecto.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/stakeholders.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="document-card">
-    <h4>Mercado Potencial</h4>
-    <p>Análisis del mercado y la demanda potencial para el Ecohotel Los Arrendajos.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/mercado-potencial-ecohotel.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="document-card">
-    <h4>Proyección de Mercado</h4>
-    <p>Estimación de ingresos y demanda a futuro para el proyecto.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/proyeccion-de-mercado.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="document-card">
-    <h4>Modelo CANVAS</h4>
-    <p>Representación gráfica de la estructura de negocio y propuesta de valor del Ecohotel.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/modelo-CANVAS.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <div class="document-card">
-    <h4>Tipos de Involucrados</h4>
-    <p>Clasificación de los diferentes tipos de actores y su grado de involucramiento.</p>
-    <a href="soportes/investigaciones/formulacion-de-proyectos/tipos-de-involucrados.pdf" target="_blank">Ver documento</a>
-  </div>
-
-  <a class="back-link" href="investigaciones.html">← Volver a Investigaciones</a>
-
-</div>
 
 </body>
 </html>
