@@ -1,27 +1,96 @@
 <!-- EDUCACIÓN -->
-<h2>Educación | DSBC</h2>
+<section id="educacion">
+  <h2 class="section-title">Educación</h2>
+  <div class="docs-container">
 
-<div class="doc-card">
-  <h4>Acta Académica</h4>
-  <a href="documentos/acta-academica.pdf" target="_blank">Ver documento</a>
-</div>
+    <div class="doc-card">
+      <h3>Acta Académica</h3>
+      <p>Documento oficial que certifica la finalización de los estudios académicos correspondientes.</p>
+      <a href="documentos/acta-academica.pdf" target="_blank" class="doc-link">Ver documento</a>
+    </div>
 
-<div class="doc-card">
-  <h4>Certificado de Créditos</h4>
-  <a href="documentos/certificado-creditos.pdf" target="_blank">Ver documento</a>
-</div>
+    <div class="doc-card">
+      <h3>Certificado de Créditos</h3>
+      <p>Certificación de los créditos académicos obtenidos durante la carrera universitaria.</p>
+      <a href="documentos/certificado-creditos.pdf" target="_blank" class="doc-link">Ver documento</a>
+    </div>
 
-<div class="doc-card">
-  <h4>Certificado Final</h4>
-  <a href="documentos/certificado-final.pdf" target="_blank">Ver documento</a>
-</div>
+    <div class="doc-card">
+      <h3>Certificado Final</h3>
+      <p>Constancia oficial de la culminación de los estudios y requisitos académicos finales.</p>
+      <a href="documentos/certificado-final.pdf" target="_blank" class="doc-link">Ver documento</a>
+    </div>
 
-<div class="doc-card">
-  <h4>Documento Oficial TCOCF</h4>
-  <a href="documentos/documento-oficial-tcocf.pdf" target="_blank">Ver documento</a>
-</div>
+    <div class="doc-card">
+      <h3>Documento Oficial TCOCF</h3>
+      <p>Documento emitido por la institución que avala formalmente los estudios cursados.</p>
+      <a href="documentos/documento-oficial-tcocf.pdf" target="_blank" class="doc-link">Ver documento</a>
+    </div>
 
-<div class="doc-card">
-  <h4>ESG y Estrategias de Sostenibilidad</h4>
-  <a href="documentos/esg-estrategias-sostenibilidad.pdf" target="_blank">Ver documento</a>
-</div>
+    <div class="doc-card">
+      <h3>ESG y Estrategias de Sostenibilidad</h3>
+      <p>Documento que detalla la formación en estrategias de sostenibilidad y criterios ESG aplicados.</p>
+      <a href="documentos/esg-estrategias-sostenibilidad.pdf" target="_blank" class="doc-link">Ver documento</a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  #educacion {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #222;
+  }
+
+  .docs-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .doc-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .doc-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+
+  .doc-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .doc-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #555;
+  }
+
+  .doc-link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0072ce;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+
+  .doc-link:hover {
+    background-color: #005bb5;
+  }
+</style>
