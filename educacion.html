@@ -25,12 +25,16 @@
       border-bottom: 2px solid #1f6feb;
       padding-bottom: 8px;
     }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
     .card {
-      border: 1px solid #ddd;
+      flex: 1 1 250px;
+      background-color: #f9f9f9;
       border-radius: 12px;
       padding: 20px;
-      margin-bottom: 20px;
-      background-color: #f9f9f9;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
       transition: transform 0.2s, box-shadow 0.2s;
     }
@@ -78,22 +82,34 @@
   <div class="container">
     <h2>Educación</h2>
 
-    <!-- CERTIFICADO DE CRÉDITOS -->
-    <div class="card">
-      <h3>Certificado de Créditos Académicos</h3>
-      <p>Documento que acredita los créditos cursados y aprobados dentro del programa académico.</p>
-      <a href="soportes/educacion/certificado-creditos.pdf" target="_blank">Ir a documento</a>
-    </div>
+    <div class="cards">
+      <!-- Certificado de Créditos -->
+      <div class="card">
+        <h3>Certificado de Créditos Académicos</h3>
+        <p>Documento que acredita los créditos cursados y aprobados dentro del programa académico.</p>
+        <a href="soportes/educacion/certificado-creditos.pdf" target="_blank">Ir a documento</a>
+      </div>
 
-    <!-- ACTA, CERTIFICADO FINAL Y DOCUMENTO OFICIAL TCOCF -->
-    <div class="card">
-      <h3>Acta Académica, Certificado Final y Documento Oficial TCOCF</h3>
-      <p>Documentos oficiales que certifican la culminación de estudios, calificaciones y acreditación en el programa Técnico en Contabilización de Operaciones Comerciales y Financieras.</p>
-      <a href="soportes/educacion/acta-academica.pdf" target="_blank">Ir a documentos</a>
-      <br>
-      <a href="soportes/educacion/certificado-final.pdf" target="_blank">Ir a documentos</a>
-      <br>
-      <a href="soportes/educacion/documento-oficial-tcocf.pdf" target="_blank">Ir a documentos</a>
+      <!-- ESG -->
+      <div class="card">
+        <h3>ESG – Estrategias de Sostenibilidad</h3>
+        <p>Certificado de formación en estrategias de sostenibilidad, enfoque ESG y gestión responsable.</p>
+        <a href="soportes/educacion/esg-estrategias-sostenibilidad.pdf" target="_blank">Ir a documento</a>
+      </div>
+
+      <!-- Econometría -->
+      <div class="card">
+        <h3>Introducción a la Econometría</h3>
+        <p>Certificado académico en fundamentos de econometría, análisis estadístico y modelos básicos.</p>
+        <a href="soportes/educacion/introduccion-econometria.pdf" target="_blank">Ir a documento</a>
+      </div>
+
+      <!-- Documentos SENA -->
+      <div class="card">
+        <h3>Documentos Oficiales – SENA</h3>
+        <p>Acta académica, certificado final y documento oficial TC/CF que certifican formación y calificaciones obtenidas.</p>
+        <a href="soportes/educacion/sena.html" target="_blank">Ver detalles</a>
+      </div>
     </div>
 
     <a class="back-link" href="index.html">← Volver a la página principal</a>
@@ -102,4 +118,3 @@
 
 </body>
 </html>
-
