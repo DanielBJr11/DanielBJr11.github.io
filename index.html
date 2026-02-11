@@ -1,7 +1,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>CV | DSBC</title>
+  <title>Educación | DSBC</title>
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -11,63 +11,19 @@
       padding: 0;
     }
     .container {
-      max-width: 1000px;
+      max-width: 960px;
       margin: 60px auto;
       background-color: #fff;
       border-radius: 14px;
       padding: 50px 60px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.06);
     }
-    /* Header */
-    .header {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 30px;
-      margin-bottom: 40px;
-    }
-    .profile-img-container {
-      text-align: center;
-      min-width: 180px;
-    }
-    .profile-img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-      margin-bottom: 12px;
-    }
-    .student-info {
-      font-size: 16px;
-      color: #57606a;
-      line-height: 1.5;
-    }
-    .profile-info {
-      flex: 1;
-      min-width: 250px;
-    }
-    .profile-info h1 {
+    h2 {
       color: #1f6feb;
-      margin: 0 0 8px 0;
-      font-size: 32px;
-    }
-    .profile-info p {
-      margin: 0 0 12px 0;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    /* Sections */
-    .section {
-      margin-top: 50px;
-    }
-    .section h2 {
-      color: #1f6feb;
-      font-size: 26px;
+      margin-bottom: 30px;
+      font-size: 28px;
       border-bottom: 2px solid #1f6feb;
       padding-bottom: 8px;
-      margin-bottom: 20px;
     }
     .cards {
       display: flex;
@@ -76,7 +32,7 @@
     }
     .card {
       flex: 1 1 250px;
-      background: #f9f9f9;
+      background-color: #f9f9f9;
       border-radius: 12px;
       padding: 20px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
@@ -87,18 +43,17 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.12);
     }
     .card h3 {
-      margin: 0 0 10px 0;
+      margin: 0 0 8px 0;
       color: #1f6feb;
       font-size: 20px;
     }
     .card p {
-      font-size: 14px;
+      margin: 0 0 10px 0;
       line-height: 1.6;
-      margin: 0 0 12px 0;
     }
     .card a {
-      text-decoration: none;
       display: inline-block;
+      text-decoration: none;
       background-color: #1f6feb;
       color: #fff;
       padding: 8px 14px;
@@ -109,73 +64,55 @@
     .card a:hover {
       background-color: #155bb5;
     }
+    .back-link {
+      display: inline-block;
+      margin-top: 40px;
+      color: #1f6feb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 
 <body>
 
   <div class="container">
-    <!-- Header -->
-    <div class="header">
-      <!-- Imagen y estudiante -->
-      <div class="profile-img-container">
-        <img class="profile-img" src="Imagen fondo azul.png" alt="Daniel Betancur">
-        <div class="student-info">
-          Estudiante de Economía<br>
-          Universidad de los Llanos
-        </div>
+    <h2>Educación</h2>
+
+    <div class="cards">
+      <!-- Certificado de Créditos -->
+      <div class="card">
+        <h3>Certificado de Créditos Académicos</h3>
+        <p>Documento que acredita los créditos cursados y aprobados dentro del programa académico.</p>
+        <a href="soportes/educacion/certificado-creditos.pdf" target="_blank">Ir a documento</a>
       </div>
 
-      <!-- Perfil laboral a la derecha -->
-      <div class="profile-info">
-        <h1>Daniel Betancur</h1>
-        <p>Investigador en economía ambiental y sostenible, con experiencia en análisis de proyectos y gestión administrativa.</p>
+      <!-- ESG -->
+      <div class="card">
+        <h3>ESG – Estrategias de Sostenibilidad</h3>
+        <p>Certificado de formación en estrategias de sostenibilidad, enfoque ESG y gestión responsable.</p>
+        <a href="soportes/educacion/esg-estrategias-sostenibilidad.pdf" target="_blank">Ir a documento</a>
+      </div>
+
+      <!-- Econometría -->
+      <div class="card">
+        <h3>Introducción a la Econometría</h3>
+        <p>Certificado académico en fundamentos de econometría, análisis estadístico y modelos básicos.</p>
+        <a href="soportes/educacion/introduccion-econometria.pdf" target="_blank">Ir a documento</a>
+      </div>
+
+      <!-- Documentos SENA -->
+      <div class="card">
+        <h3>Documentos Oficiales – SENA</h3>
+        <p>Acta académica, certificado final y documento oficial TC/CF que certifican formación y calificaciones obtenidas.</p>
+        <a href="soportes/educacion/sena.html" target="_blank">Ver detalles</a>
       </div>
     </div>
 
-    <!-- Secciones -->
-    <div class="section">
-      <h2>Educación</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Certificado de Créditos</h3>
-          <p>Acredita los créditos cursados y aprobados dentro del programa académico.</p>
-          <a href="educacion.html">Ver detalles</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Experiencia</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Pasantía en Investigación</h3>
-          <p>Apoyo en procesos de investigación académica, análisis de información y elaboración de insumos.</p>
-          <a href="experiencia.html">Ver detalles</a>
-        </div>
-        <div class="card">
-          <h3>Apoyo Técnico Administrativo</h3>
-          <p>Gestión administrativa y acompañamiento en asociaciones comunitarias.</p>
-          <a href="experiencia.html">Ver detalles</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Investigaciones</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Proyectos Investigativos</h3>
-          <p>Acceso a investigaciones en ordenamiento territorial, economía y desarrollo regional.</p>
-          <a href="investigaciones.html">Ver detalles</a>
-        </div>
-        <div class="card">
-          <h3>Ecohotel Los Arrendajos</h3>
-          <p>Proyecto de turismo sostenible con planificación estratégica, mercado y stakeholders.</p>
-          <a href="fases-ecohotel.html">Ver fases</a>
-        </div>
-      </div>
-    </div>
+    <a class="back-link" href="index.html">← Volver a la página principal</a>
 
   </div>
 
