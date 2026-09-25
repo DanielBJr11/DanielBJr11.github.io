@@ -1,202 +1,685 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>CV | DSBC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CV | Daniel Betancur</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f6f8fa;
+      background: linear-gradient(135deg, #f4f7fb 0%, #eef3f9 100%);
       color: #24292f;
       margin: 0;
-      padding: 0;
+      padding: 30px 20px;
+      line-height: 1.6;
     }
+
+    /* CONTENEDOR PRINCIPAL */
     .container {
-      max-width: 1000px;
-      margin: 60px auto;
-      background-color: #fff;
-      border-radius: 14px;
-      padding: 50px 60px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      width: 100%;
+      max-width: 1100px;
+      margin: 30px auto;
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 55px 65px;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
     }
-    /* Header */
+
+    /* =========================
+       ENCABEZADO
+    ========================= */
+
     .header {
       display: flex;
-      align-items: flex-start;
-      gap: 40px;
-      margin-bottom: 50px;
+      align-items: center;
+      gap: 45px;
+      padding-bottom: 45px;
+      border-bottom: 1px solid #e6eaf0;
     }
+
+    .profile-column {
+      flex: 0 0 190px;
+      text-align: center;
+    }
+
     .profile-img {
+      display: block;
       width: 180px;
       height: 180px;
+      margin: 0 auto;
       object-fit: cover;
+
+      /* Evita cortar la parte superior de la cabeza */
+      object-position: center 20%;
+
       border-radius: 50%;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+      border: 5px solid #ffffff;
+      box-shadow:
+        0 8px 25px rgba(31, 111, 235, 0.18),
+        0 2px 8px rgba(0, 0, 0, 0.10);
     }
+
+    .profile-details {
+      margin: 16px 0 0;
+      color: #57606a;
+      font-size: 14px;
+      line-height: 1.5;
+      font-style: normal;
+    }
+
+    .profile-details strong {
+      color: #24292f;
+    }
+
     .profile-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex: 1;
     }
+
     .profile-info h1 {
-      color: #1f6feb;
-      margin: 0 0 8px 0;
-      font-size: 32px;
+      color: #1769e0;
+      margin: 0 0 10px;
+      font-size: 38px;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
     }
+
+    .profile-role {
+      display: inline-block;
+      margin-bottom: 15px;
+      padding: 6px 13px;
+      background: #edf5ff;
+      color: #1769e0;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
     .profile-info p {
       margin: 0;
       color: #57606a;
       font-size: 16px;
-      line-height: 1.5;
+      line-height: 1.7;
     }
-    .profile-details {
-      margin-top: 10px;
-      font-style: italic;
-      color: #24292f;
-    }
-    /* Secciones */
+
+
+    /* =========================
+       SECCIONES
+    ========================= */
+
     .section {
-      margin-top: 50px;
+      margin-top: 48px;
     }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 22px;
+    }
+
     .section h2 {
-      color: #1f6feb;
-      font-size: 26px;
-      border-bottom: 2px solid #1f6feb;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
+      color: #1769e0;
+      font-size: 25px;
+      margin: 0;
+      white-space: nowrap;
+      letter-spacing: -0.2px;
     }
-    /* Cards */
+
+    .section-line {
+      height: 2px;
+      background: linear-gradient(
+        to right,
+        #1769e0,
+        rgba(23, 105, 224, 0.08)
+      );
+      flex: 1;
+      border-radius: 10px;
+    }
+
+
+    /* =========================
+       TARJETAS
+    ========================= */
+
     .card-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
+
     .card {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; /* Botón al fondo */
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      padding: 20px;
-      background-color: #f9f9f9;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-      transition: transform 0.2s, box-shadow 0.2s;
+      justify-content: space-between;
+
+      min-height: 210px;
+
+      border: 1px solid #e1e6ed;
+      border-radius: 13px;
+      padding: 23px;
+
+      background: #ffffff;
+
+      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.05);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
     }
+
     .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      transform: translateY(-4px);
+      border-color: #c9dcf8;
+      box-shadow: 0 12px 28px rgba(31, 111, 235, 0.11);
     }
+
     .card h3 {
-      margin: 0 0 10px 0;
-      color: #1f6feb;
-      font-size: 20px;
+      margin: 0 0 11px;
+      color: #1769e0;
+      font-size: 18px;
+      line-height: 1.35;
     }
+
     .card p {
+      color: #57606a;
       font-size: 14px;
       line-height: 1.6;
-      margin: 0 0 12px 0;
+      margin: 0 0 20px;
     }
+
     .card a {
-      display: inline-block;
+      display: block;
+      width: 100%;
+
       text-decoration: none;
-      background-color: #1f6feb;
-      color: #fff;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-      margin-top: 10px;
       text-align: center;
+
+      background: #1769e0;
+      color: #ffffff;
+
+      padding: 10px 14px;
+      border-radius: 7px;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      transition:
+        background 0.25s ease,
+        transform 0.2s ease;
     }
+
     .card a:hover {
-      background-color: #155bb5;
+      background: #1258bd;
+      transform: translateY(-1px);
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer {
+      margin-top: 55px;
+      padding-top: 25px;
+      border-top: 1px solid #e6eaf0;
+
+      text-align: center;
+      color: #8a939e;
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       TABLET
+    ========================= */
+
+    @media (max-width: 800px) {
+
+      body {
+        padding: 15px;
+      }
+
+      .container {
+        margin: 15px auto;
+        padding: 40px 35px;
+      }
+
+      .header {
+        gap: 30px;
+      }
+
+      .profile-column {
+        flex-basis: 155px;
+      }
+
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        object-position: center 20%;
+      }
+
+      .profile-info h1 {
+        font-size: 31px;
+      }
+
+      .profile-info p {
+        font-size: 15px;
+      }
+
+      .card-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+
+    /* =========================
+       CELULAR
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      body {
+        padding: 8px;
+      }
+
+      .container {
+        margin: 8px auto;
+        padding: 30px 20px;
+        border-radius: 14px;
+      }
+
+      .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 22px;
+        padding-bottom: 32px;
+      }
+
+      .profile-column {
+        flex: none;
+        width: 100%;
+      }
+
+      .profile-img {
+        width: 155px;
+        height: 155px;
+
+        /*
+          Ajuste especial para móvil:
+          permite ver más de la parte superior
+          de la fotografía.
+        */
+        object-position: center 18%;
+      }
+
+      .profile-details {
+        margin-top: 12px;
+      }
+
+      .profile-info h1 {
+        font-size: 29px;
+      }
+
+      .profile-role {
+        font-size: 12px;
+      }
+
+      .profile-info p {
+        font-size: 14px;
+        line-height: 1.65;
+      }
+
+      .section {
+        margin-top: 38px;
+      }
+
+      .section-header {
+        gap: 10px;
+      }
+
+      .section h2 {
+        font-size: 21px;
+      }
+
+      .card-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+
+      .card {
+        min-height: auto;
+        padding: 20px;
+      }
+
+      .card h3 {
+        font-size: 17px;
+      }
+
+      .card p {
+        font-size: 13.5px;
+      }
+
+      .footer {
+        margin-top: 40px;
+      }
+    }
+
+
+    /* =========================
+       CELULARES PEQUEÑOS
+    ========================= */
+
+    @media (max-width: 380px) {
+
+      .container {
+        padding: 25px 16px;
+      }
+
+      .profile-img {
+        width: 140px;
+        height: 140px;
+        object-position: center 18%;
+      }
+
+      .profile-info h1 {
+        font-size: 26px;
+      }
+
+      .section h2 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
 
+
 <body>
+
   <div class="container">
-    <!-- Header -->
+
+    <!-- =========================
+         PERFIL
+    ========================= -->
+
     <div class="header">
-      <div>
-        <img class="profile-img" src="Imagen fondo azul.png" alt="Daniel Betancur">
-        <p class="profile-details">Estudiante de Economía<br>Universidad de los Llanos</p>
+
+      <div class="profile-column">
+
+        <img
+          class="profile-img"
+          src="Imagen fondo azul.png"
+          alt="Fotografía de Daniel Betancur"
+        >
+
+        <p class="profile-details">
+          <strong>Estudiante de Economía</strong><br>
+          Universidad de los Llanos
+        </p>
+
       </div>
+
+
       <div class="profile-info">
+
         <h1>Daniel Betancur</h1>
-        <p>Estudiante de último semestre de Economía de la Universidad de los Llanos
-con formación técnica en contabilización de operaciones comerciales y
-financieras. Cuento con experiencia en el sector administrativo y apoyo
-técnico, gestionando informes financieros y procesos organizacionales.
-Actualmente, me desempeño como pasante de investigación en proyectos
-de ordenamiento territorial y desarrollo regional sostenible , combinando
-habilidades analíticas con una visión técnica y estratégica.</p>
+
+        <span class="profile-role">
+          Economía · Investigación · Desarrollo territorial
+        </span>
+
+        <p>
+          Estudiante de Economía en proceso de grado de la Universidad de los Llanos,
+          con capacidades para la formulación y evaluación de proyectos, políticas
+          y procesos de desarrollo con enfoque territorial. Cuento con experiencia
+          en investigación aplicada a proyectos de ordenamiento territorial y
+          desarrollo regional sostenible, así como formación técnica en
+          contabilización de operaciones comerciales y financieras.
+          También cuento con experiencia en procesos administrativos y apoyo técnico,
+          gestión de informes financieros y procesos organizacionales.
+        </p>
+
       </div>
+
     </div>
 
-    <!-- Secciones -->
-    <div class="section">
-      <h2>Educación</h2>
-      <div class="card-container">
-        <div class="card">
-          <h3>Certificado de Créditos</h3>
-          <p>Acredita los créditos cursados y aprobados dentro del programa académico.</p>
-          <a href="soportes/educacion/certificado-creditos.pdf" target="_blank">Ir a documento</a>
-        </div>
-        <div class="card">
-          <h3>Certificados ESG</h3>
-          <p>Formación en estrategias de sostenibilidad y enfoque ESG.</p>
-          <a href="soportes/educacion/esg-estrategias-sostenibilidad.pdf" target="_blank">Ir a documento</a>
-        </div>
-        <div class="card">
-          <h3>Introducción a la Econometría</h3>
-          <p>Certificado académico en fundamentos de econometría, análisis estadístico y modelos básicos.</p>
-          <a href="soportes/educacion/introduccion-econometria.pdf" target="_blank">Ir a documento</a>
-        </div>
-        <div class="card">
-          <h3>Documentos Oficiales SENA</h3>
-          <p>Acta académica, certificado final y documento oficial TCOCF del programa técnico.</p>
-          <a href="sena.html" target="_blank">Ver detalles</a>
-        </div>
-      </div>
-    </div>
+
+    <!-- =========================
+         EDUCACIÓN
+    ========================= -->
 
     <div class="section">
-      <h2>Experiencia</h2>
-      <div class="card-container">
-        <div class="card">
-          <h3>Pasantía en Investigación</h3>
-          <p>Apoyo en procesos de investigación académica, análisis de información y elaboración de insumos.</p>
-          <a href="soportes/experiencia/pasantia-investigacion.pdf" target="_blank">Ir a documento</a>
-        </div>
-        <div class="card">
-          <h3>Apoyo Técnico Administrativo – Porfía 1</h3>
-          <p>Gestión administrativa y acompañamiento en asociaciones comunitarias.</p>
-          <a href="soportes/experiencia/apoyo-tecnico-porfia-1.pdf" target="_blank">Ir a documento</a>
-        </div>
-        <div class="card">
-          <h3>Apoyo Técnico Administrativo – Porfía 3</h3>
-          <p>Apoyo técnico y operativo en procesos institucionales.</p>
-          <a href="soportes/experiencia/apoyo-tecnico-porfia-3.pdf" target="_blank">Ir a documento</a>
-        </div>
+
+      <div class="section-header">
+        <h2>Educación</h2>
+        <div class="section-line"></div>
       </div>
+
+
+      <div class="card-container">
+
+        <div class="card">
+          <div>
+            <h3>Certificado de Créditos</h3>
+            <p>
+              Acredita los créditos cursados y aprobados dentro del programa académico.
+            </p>
+          </div>
+
+          <a
+            href="soportes/educacion/certificado-creditos.pdf"
+            target="_blank"
+          >
+            Ver documento
+          </a>
+        </div>
+
+
+        <div class="card">
+          <div>
+            <h3>Certificados ESG</h3>
+            <p>
+              Formación en estrategias de sostenibilidad y enfoque ESG.
+            </p>
+          </div>
+
+          <a
+            href="soportes/educacion/esg-estrategias-sostenibilidad.pdf"
+            target="_blank"
+          >
+            Ver documento
+          </a>
+        </div>
+
+
+        <div class="card">
+          <div>
+            <h3>Introducción a la Econometría</h3>
+            <p>
+              Certificado académico en fundamentos de econometría,
+              análisis estadístico y modelos básicos.
+            </p>
+          </div>
+
+          <a
+            href="soportes/educacion/introduccion-econometria.pdf"
+            target="_blank"
+          >
+            Ver documento
+          </a>
+        </div>
+
+
+        <div class="card">
+          <div>
+            <h3>Documentos Oficiales SENA</h3>
+            <p>
+              Acta académica, certificado final y documento oficial
+              TCOCF del programa técnico.
+            </p>
+          </div>
+
+          <a
+            href="sena.html"
+            target="_blank"
+          >
+            Ver detalles
+          </a>
+        </div>
+
+      </div>
+
     </div>
+
+
+    <!-- =========================
+         EXPERIENCIA
+    ========================= -->
 
     <div class="section">
-      <h2>Investigaciones</h2>
-      <div class="card-container">
-        <div class="card">
-          <h3>Proyectos Investigativos</h3>
-          <p>Acceso a investigaciones en ordenamiento territorial, economía y desarrollo regional.</p>
-          <a href="investigaciones.html" target="_blank">Ver detalles</a>
-        </div>
-        <div class="card">
-          <h3>Proyecto Ecohotel Los Arrendajos</h3>
-          <p>Desarrollo integral del proyecto de turismo sostenible, incluyendo planificación, análisis de mercado y gestión de actores.</p>
-          <a href="fases-ecohotel.html" target="_blank">Ver detalles</a>
-        </div>
+
+      <div class="section-header">
+        <h2>Experiencia</h2>
+        <div class="section-line"></div>
       </div>
+
+
+      <div class="card-container">
+
+        <div class="card">
+          <div>
+            <h3>Pasantía en Investigación</h3>
+            <p>
+              Apoyo en procesos de investigación académica,
+              análisis de información y elaboración de insumos técnicos.
+            </p>
+          </div>
+
+          <a
+            href="soportes/experiencia/pasantia-investigacion.pdf"
+            target="_blank"
+          >
+            Ver documento
+          </a>
+        </div>
+
+
+        <div class="card">
+          <div>
+            <h3>Apoyo Técnico Administrativo – Porfía 1</h3>
+            <p>
+              Gestión administrativa y acompañamiento
+              en asociaciones comunitarias.
+            </p>
+          </div>
+
+          <a
+            href="soportes/experiencia/apoyo-tecnico-porfia-1.pdf"
+            target="_blank"
+          >
+            Ver documento
+          </a>
+        </div>
+
+
+        <div class="card">
+          <div>
+            <h3>Apoyo Técnico Administrativo – Porfía 3</h3>
+            <p>
+              Apoyo técnico y operativo en procesos institucionales
+              y administrativos.
+            </p>
+          </div>
+
+          <a
+            href="soportes/experiencia/apoyo-tecnico-porfia-3.pdf"
+            target="_blank"
+          >
+            Ver documento
+          </a>
+        </div>
+
+      </div>
+
     </div>
 
+
+    <!-- =========================
+         INVESTIGACIONES
+    ========================= -->
+
+    <div class="section">
+
+      <div class="section-header">
+        <h2>Investigaciones</h2>
+        <div class="section-line"></div>
+      </div>
+
+
+      <div class="card-container">
+
+        <div class="card">
+          <div>
+            <h3>Proyectos Investigativos</h3>
+            <p>
+              Acceso a investigaciones en ordenamiento territorial,
+              economía y desarrollo regional.
+            </p>
+          </div>
+
+          <a
+            href="investigaciones.html"
+            target="_blank"
+          >
+            Ver detalles
+          </a>
+        </div>
+
+
+        <div class="card">
+          <div>
+            <h3>Proyecto Ecohotel Los Arrendajos</h3>
+            <p>
+              Desarrollo integral del proyecto de turismo sostenible,
+              incluyendo planificación, análisis de mercado
+              y gestión de actores.
+            </p>
+          </div>
+
+          <a
+            href="fases-ecohotel.html"
+            target="_blank"
+          >
+            Ver detalles
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         PIE DE PÁGINA
+    ========================= -->
+
+    <div class="footer">
+      Portafolio profesional · Daniel Betancur
+    </div>
+
+  </div>
+
+</body>
+</html>
   </div>
 </body>
 </html>
