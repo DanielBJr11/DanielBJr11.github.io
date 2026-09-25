@@ -3,683 +3,1946 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CV | Daniel Betancur</title>
+  <title>Daniel Betancur | Portafolio Profesional</title>
 
   <style>
+
+    /* =========================================================
+       CONFIGURACIÓN GENERAL
+    ========================================================= */
+
+    :root {
+      --primary: #1769e0;
+      --primary-dark: #0d4fae;
+      --primary-light: #eaf3ff;
+
+      --dark: #172033;
+      --text: #465268;
+      --muted: #7b8798;
+
+      --background: #f5f8fc;
+      --white: #ffffff;
+      --border: #e4e9f0;
+
+      --shadow-sm: 0 6px 20px rgba(18, 42, 76, 0.06);
+      --shadow-md: 0 15px 40px rgba(18, 42, 76, 0.09);
+
+      --radius: 18px;
+    }
+
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 90px;
     }
 
     body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f4f7fb 0%, #eef3f9 100%);
-      color: #24292f;
-      margin: 0;
-      padding: 30px 20px;
+      font-family:
+        "Segoe UI",
+        Inter,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        sans-serif;
+
+      background:
+        radial-gradient(
+          circle at 10% 10%,
+          rgba(23, 105, 224, 0.08),
+          transparent 28%
+        ),
+        linear-gradient(
+          135deg,
+          #f7faff 0%,
+          #f1f5fa 100%
+        );
+
+      color: var(--text);
       line-height: 1.6;
+      min-height: 100vh;
     }
 
-    /* CONTENEDOR PRINCIPAL */
-    .container {
+    a {
+      color: inherit;
+    }
+
+
+    /* =========================================================
+       NAVEGACIÓN
+    ========================================================= */
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
       width: 100%;
-      max-width: 1100px;
-      margin: 30px auto;
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 55px 65px;
-      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+
+      border-bottom: 1px solid rgba(220, 228, 239, 0.8);
     }
 
-    /* =========================
-       ENCABEZADO
-    ========================= */
+    .nav-inner {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
 
-    .header {
+      height: 72px;
+
       display: flex;
       align-items: center;
-      gap: 45px;
-      padding-bottom: 45px;
-      border-bottom: 1px solid #e6eaf0;
+      justify-content: space-between;
     }
 
-    .profile-column {
-      flex: 0 0 190px;
+    .brand {
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--dark);
+      letter-spacing: -0.3px;
+    }
+
+    .brand span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #5e6a7c;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+
+    /* =========================================================
+       CONTENEDOR
+    ========================================================= */
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+
+      margin-top: 38px;
+
+      padding: 65px;
+
+      border-radius: 28px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ffffff 0%,
+          #f8fbff 100%
+        );
+
+      border: 1px solid rgba(218, 226, 237, 0.9);
+
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 330px;
+      height: 330px;
+
+      right: -140px;
+      top: -150px;
+
+      background: rgba(23, 105, 224, 0.08);
+
+      border-radius: 50%;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+      height: 180px;
+
+      right: 120px;
+      bottom: -120px;
+
+      background: rgba(23, 105, 224, 0.045);
+
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+
+      display: grid;
+
+      grid-template-columns: 250px 1fr;
+
+      gap: 55px;
+
+      align-items: center;
+    }
+
+
+    /* =========================================================
+       FOTO
+    ========================================================= */
+
+    .photo-wrapper {
       text-align: center;
+    }
+
+    .photo-ring {
+      position: relative;
+
+      width: 210px;
+      height: 210px;
+
+      margin: auto;
+
+      padding: 7px;
+
+      border-radius: 50%;
+
+      background:
+        linear-gradient(
+          145deg,
+          #1769e0,
+          #73a9f2
+        );
+
+      box-shadow:
+        0 15px 35px rgba(23, 105, 224, 0.20);
     }
 
     .profile-img {
       display: block;
-      width: 180px;
-      height: 180px;
-      margin: 0 auto;
+
+      width: 100%;
+      height: 100%;
+
       object-fit: cover;
 
-      /* Evita cortar la parte superior de la cabeza */
-      object-position: center 20%;
+      /* Evita cortar la cabeza */
+      object-position: center 19%;
 
       border-radius: 50%;
-      border: 5px solid #ffffff;
-      box-shadow:
-        0 8px 25px rgba(31, 111, 235, 0.18),
-        0 2px 8px rgba(0, 0, 0, 0.10);
+
+      background: #eaf3ff;
+
+      border: 4px solid #ffffff;
     }
 
-    .profile-details {
-      margin: 16px 0 0;
-      color: #57606a;
-      font-size: 14px;
-      line-height: 1.5;
-      font-style: normal;
-    }
+    .photo-caption {
+      margin-top: 18px;
 
-    .profile-details strong {
-      color: #24292f;
-    }
-
-    .profile-info {
-      flex: 1;
-    }
-
-    .profile-info h1 {
-      color: #1769e0;
-      margin: 0 0 10px;
-      font-size: 38px;
-      line-height: 1.2;
-      letter-spacing: -0.5px;
-    }
-
-    .profile-role {
-      display: inline-block;
-      margin-bottom: 15px;
-      padding: 6px 13px;
-      background: #edf5ff;
-      color: #1769e0;
-      border-radius: 20px;
       font-size: 13px;
-      font-weight: 600;
-    }
 
-    .profile-info p {
-      margin: 0;
-      color: #57606a;
-      font-size: 16px;
-      line-height: 1.7;
+      color: var(--muted);
+
+      line-height: 1.5;
     }
 
 
-    /* =========================
+    /* =========================================================
+       TEXTO HERO
+    ========================================================= */
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 7px 13px;
+
+      margin-bottom: 18px;
+
+      border-radius: 30px;
+
+      background: var(--primary-light);
+
+      color: var(--primary);
+
+      font-size: 12px;
+      font-weight: 700;
+
+      letter-spacing: 0.4px;
+
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: var(--primary);
+    }
+
+    .hero h1 {
+      color: var(--dark);
+
+      font-size: clamp(38px, 5vw, 58px);
+
+      line-height: 1.05;
+
+      letter-spacing: -2px;
+
+      margin-bottom: 16px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero-description {
+      max-width: 700px;
+
+      font-size: 17px;
+
+      line-height: 1.8;
+
+      color: #5b6779;
+
+      margin-bottom: 27px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-flex;
+
+      align-items: center;
+      justify-content: center;
+
+      padding: 11px 18px;
+
+      border-radius: 9px;
+
+      text-decoration: none;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--primary);
+      color: #ffffff;
+
+      box-shadow:
+        0 7px 18px rgba(23, 105, 224, 0.22);
+    }
+
+    .button-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .button-secondary {
+      background: #ffffff;
+      color: var(--dark);
+
+      border: 1px solid var(--border);
+    }
+
+    .button-secondary:hover {
+      border-color: #b8ccec;
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================================================
+       ÁREAS PROFESIONALES
+    ========================================================= */
+
+    .areas {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 14px;
+
+      margin-top: 22px;
+    }
+
+    .area {
+      padding: 17px;
+
+      background: rgba(255, 255, 255, 0.75);
+
+      border: 1px solid var(--border);
+
+      border-radius: 12px;
+    }
+
+    .area strong {
+      display: block;
+
+      color: var(--dark);
+
+      font-size: 14px;
+
+      margin-bottom: 3px;
+    }
+
+    .area span {
+      color: var(--muted);
+
+      font-size: 12px;
+    }
+
+
+    /* =========================================================
        SECCIONES
-    ========================= */
+    ========================================================= */
 
     .section {
-      margin-top: 48px;
+      padding: 85px 0 0;
     }
 
-    .section-header {
+    .section-heading {
       display: flex;
-      align-items: center;
-      gap: 15px;
-      margin-bottom: 22px;
-    }
 
-    .section h2 {
-      color: #1769e0;
-      font-size: 25px;
-      margin: 0;
-      white-space: nowrap;
-      letter-spacing: -0.2px;
-    }
+      align-items: end;
 
-    .section-line {
-      height: 2px;
-      background: linear-gradient(
-        to right,
-        #1769e0,
-        rgba(23, 105, 224, 0.08)
-      );
-      flex: 1;
-      border-radius: 10px;
-    }
-
-
-    /* =========================
-       TARJETAS
-    ========================= */
-
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      display: flex;
-      flex-direction: column;
       justify-content: space-between;
 
-      min-height: 210px;
+      gap: 20px;
 
-      border: 1px solid #e1e6ed;
-      border-radius: 13px;
-      padding: 23px;
+      margin-bottom: 35px;
+    }
+
+    .section-label {
+      color: var(--primary);
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      letter-spacing: 1.2px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 5px;
+    }
+
+    .section-title {
+      color: var(--dark);
+
+      font-size: 31px;
+
+      line-height: 1.2;
+
+      letter-spacing: -0.7px;
+    }
+
+    .section-description {
+      max-width: 450px;
+
+      color: var(--muted);
+
+      font-size: 14px;
+    }
+
+
+    /* =========================================================
+       PERFIL
+    ========================================================= */
+
+    .about-grid {
+      display: grid;
+
+      grid-template-columns: 1.3fr 0.7fr;
+
+      gap: 22px;
+    }
+
+    .about-card {
+      padding: 32px;
 
       background: #ffffff;
 
-      box-shadow: 0 5px 16px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+
+      border-radius: var(--radius);
+
+      box-shadow: var(--shadow-sm);
+    }
+
+    .about-card h3 {
+      color: var(--dark);
+
+      font-size: 20px;
+
+      margin-bottom: 14px;
+    }
+
+    .about-card p {
+      color: var(--text);
+
+      font-size: 15px;
+
+      line-height: 1.8;
+    }
+
+    .highlight-box {
+      background:
+        linear-gradient(
+          145deg,
+          #1769e0,
+          #1256b7
+        );
+
+      color: white;
+
+      border: none;
+    }
+
+    .highlight-box h3,
+    .highlight-box p {
+      color: white;
+    }
+
+    .highlight-box p {
+      opacity: 0.9;
+    }
+
+
+    /* =========================================================
+       TIMELINE
+    ========================================================= */
+
+    .timeline {
+      position: relative;
+
+      max-width: 900px;
+
+      margin: auto;
+    }
+
+    .timeline::before {
+      content: "";
+
+      position: absolute;
+
+      left: 15px;
+      top: 5px;
+      bottom: 5px;
+
+      width: 2px;
+
+      background: #dce7f7;
+    }
+
+    .timeline-item {
+      position: relative;
+
+      display: grid;
+
+      grid-template-columns: 32px 1fr;
+
+      gap: 20px;
+
+      margin-bottom: 25px;
+    }
+
+    .timeline-dot {
+      position: relative;
+      z-index: 2;
+
+      width: 12px;
+      height: 12px;
+
+      margin-top: 8px;
+      margin-left: 10px;
+
+      border-radius: 50%;
+
+      background: var(--primary);
+
+      box-shadow:
+        0 0 0 5px #edf5ff;
+    }
+
+    .timeline-content {
+      padding: 25px 28px;
+
+      background: #ffffff;
+
+      border: 1px solid var(--border);
+
+      border-radius: 15px;
+
+      box-shadow: var(--shadow-sm);
 
       transition:
         transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
+        box-shadow 0.25s ease;
     }
 
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: #c9dcf8;
-      box-shadow: 0 12px 28px rgba(31, 111, 235, 0.11);
+    .timeline-content:hover {
+      transform: translateX(4px);
+
+      box-shadow: var(--shadow-md);
     }
 
-    .card h3 {
-      margin: 0 0 11px;
-      color: #1769e0;
+    .timeline-content h3 {
+      color: var(--dark);
+
       font-size: 18px;
-      line-height: 1.35;
+
+      margin-bottom: 7px;
     }
 
-    .card p {
-      color: #57606a;
+    .timeline-content p {
+      color: var(--text);
+
       font-size: 14px;
-      line-height: 1.6;
-      margin: 0 0 20px;
+
+      line-height: 1.7;
     }
 
-    .card a {
-      display: block;
-      width: 100%;
+    .timeline-tag {
+      display: inline-block;
 
-      text-decoration: none;
-      text-align: center;
+      margin-bottom: 9px;
 
-      background: #1769e0;
-      color: #ffffff;
+      color: var(--primary);
 
-      padding: 10px 14px;
-      border-radius: 7px;
+      font-size: 11px;
 
-      font-size: 14px;
-      font-weight: 600;
+      font-weight: 800;
+
+      letter-spacing: 0.8px;
+
+      text-transform: uppercase;
+    }
+
+
+    /* =========================================================
+       DOCUMENTOS
+    ========================================================= */
+
+    .documents-grid {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 16px;
+    }
+
+    .document-card {
+      position: relative;
+
+      padding: 25px;
+
+      background: #ffffff;
+
+      border: 1px solid var(--border);
+
+      border-radius: 15px;
+
+      box-shadow: var(--shadow-sm);
 
       transition:
-        background 0.25s ease,
-        transform 0.2s ease;
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
     }
 
-    .card a:hover {
-      background: #1258bd;
-      transform: translateY(-1px);
+    .document-card:hover {
+      transform: translateY(-5px);
+
+      box-shadow: var(--shadow-md);
+    }
+
+    .document-number {
+      color: #c9d8ec;
+
+      font-size: 30px;
+
+      font-weight: 800;
+
+      line-height: 1;
+
+      margin-bottom: 20px;
+    }
+
+    .document-card h3 {
+      color: var(--dark);
+
+      font-size: 16px;
+
+      line-height: 1.35;
+
+      margin-bottom: 9px;
+    }
+
+    .document-card p {
+      color: var(--muted);
+
+      font-size: 13px;
+
+      line-height: 1.6;
+
+      margin-bottom: 20px;
+    }
+
+    .document-link {
+      color: var(--primary);
+
+      text-decoration: none;
+
+      font-size: 13px;
+
+      font-weight: 700;
+    }
+
+    .document-link:hover {
+      color: var(--primary-dark);
     }
 
 
-    /* =========================
+    /* =========================================================
+       INVESTIGACIONES
+    ========================================================= */
+
+    .projects {
+      display: grid;
+
+      grid-template-columns: 1.35fr 0.65fr;
+
+      gap: 20px;
+    }
+
+    .project {
+      position: relative;
+
+      overflow: hidden;
+
+      min-height: 290px;
+
+      padding: 34px;
+
+      border-radius: 20px;
+
+      background: #ffffff;
+
+      border: 1px solid var(--border);
+
+      box-shadow: var(--shadow-sm);
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: flex-end;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+
+      box-shadow: var(--shadow-md);
+    }
+
+    .project-featured {
+      background:
+        linear-gradient(
+          140deg,
+          #0e55b8,
+          #1769e0
+        );
+
+      border: none;
+    }
+
+    .project-featured::before {
+      content: "";
+
+      position: absolute;
+
+      width: 260px;
+      height: 260px;
+
+      right: -80px;
+      top: -100px;
+
+      border-radius: 50%;
+
+      background: rgba(255,255,255,0.08);
+    }
+
+    .project small {
+      color: var(--primary);
+
+      font-size: 11px;
+
+      font-weight: 800;
+
+      letter-spacing: 1px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 10px;
+    }
+
+    .project-featured small {
+      color: #bcd8ff;
+    }
+
+    .project h3 {
+      position: relative;
+
+      color: var(--dark);
+
+      font-size: 23px;
+
+      margin-bottom: 10px;
+    }
+
+    .project-featured h3 {
+      color: white;
+    }
+
+    .project p {
+      position: relative;
+
+      color: var(--text);
+
+      font-size: 14px;
+
+      line-height: 1.7;
+
+      margin-bottom: 20px;
+
+      max-width: 650px;
+    }
+
+    .project-featured p {
+      color: rgba(255,255,255,0.86);
+    }
+
+    .project a {
+      position: relative;
+
+      width: fit-content;
+
+      color: var(--primary);
+
+      text-decoration: none;
+
+      font-size: 13px;
+
+      font-weight: 800;
+    }
+
+    .project-featured a {
+      color: white;
+    }
+
+
+    /* =========================================================
        FOOTER
-    ========================= */
+    ========================================================= */
 
-    .footer {
-      margin-top: 55px;
-      padding-top: 25px;
-      border-top: 1px solid #e6eaf0;
+    footer {
+      margin-top: 90px;
+
+      padding: 35px 0;
+
+      border-top: 1px solid var(--border);
 
       text-align: center;
-      color: #8a939e;
+
+      color: var(--muted);
+
       font-size: 13px;
     }
 
+    footer strong {
+      color: var(--dark);
+    }
 
-    /* =========================
+
+    /* =========================================================
        TABLET
-    ========================= */
+    ========================================================= */
 
-    @media (max-width: 800px) {
+    @media (max-width: 900px) {
+
+      .hero {
+        padding: 45px;
+      }
+
+      .hero-content {
+        grid-template-columns: 190px 1fr;
+        gap: 35px;
+      }
+
+      .photo-ring {
+        width: 175px;
+        height: 175px;
+      }
+
+      .areas {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .documents-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+
+
+    /* =========================================================
+       MÓVIL
+    ========================================================= */
+
+    @media (max-width: 650px) {
 
       body {
-        padding: 15px;
+        font-size: 14px;
       }
 
       .container {
-        margin: 15px auto;
-        padding: 40px 35px;
+        width: min(100% - 24px, 1120px);
       }
 
-      .header {
-        gap: 30px;
+      .nav-inner {
+        width: calc(100% - 28px);
+        height: 62px;
       }
 
-      .profile-column {
-        flex-basis: 155px;
-      }
-
-      .profile-img {
-        width: 150px;
-        height: 150px;
-        object-position: center 20%;
-      }
-
-      .profile-info h1 {
-        font-size: 31px;
-      }
-
-      .profile-info p {
+      .brand {
         font-size: 15px;
       }
 
-      .card-container {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-
-    /* =========================
-       CELULAR
-    ========================= */
-
-    @media (max-width: 600px) {
-
-      body {
-        padding: 8px;
+      .nav-links {
+        gap: 13px;
       }
 
-      .container {
-        margin: 8px auto;
-        padding: 30px 20px;
-        border-radius: 14px;
+      .nav-links a {
+        font-size: 11px;
       }
 
-      .header {
-        flex-direction: column;
+      .hero {
+        margin-top: 18px;
+
+        padding: 35px 22px;
+
+        border-radius: 20px;
+      }
+
+      .hero-content {
+        grid-template-columns: 1fr;
+
         text-align: center;
-        gap: 22px;
-        padding-bottom: 32px;
+
+        gap: 28px;
       }
 
-      .profile-column {
-        flex: none;
-        width: 100%;
+      .photo-ring {
+        width: 175px;
+        height: 175px;
       }
 
       .profile-img {
-        width: 155px;
-        height: 155px;
-
-        /*
-          Ajuste especial para móvil:
-          permite ver más de la parte superior
-          de la fotografía.
-        */
         object-position: center 18%;
       }
 
-      .profile-details {
-        margin-top: 12px;
+      .eyebrow {
+        font-size: 10px;
       }
 
-      .profile-info h1 {
-        font-size: 29px;
+      .hero h1 {
+        font-size: 38px;
+
+        letter-spacing: -1.2px;
       }
 
-      .profile-role {
+      .hero-description {
+        font-size: 14px;
+
+        line-height: 1.7;
+      }
+
+      .hero-actions {
+        justify-content: center;
+      }
+
+      .areas {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 9px;
+      }
+
+      .area {
+        padding: 13px;
+      }
+
+      .area strong {
         font-size: 12px;
       }
 
-      .profile-info p {
-        font-size: 14px;
-        line-height: 1.65;
+      .area span {
+        font-size: 10px;
       }
 
       .section {
-        margin-top: 38px;
+        padding-top: 58px;
       }
 
-      .section-header {
-        gap: 10px;
+      .section-heading {
+        display: block;
       }
 
-      .section h2 {
-        font-size: 21px;
+      .section-title {
+        font-size: 26px;
+
+        margin-bottom: 8px;
       }
 
-      .card-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
+      .section-description {
+        font-size: 13px;
       }
 
-      .card {
-        min-height: auto;
+      .about-card {
+        padding: 23px;
+      }
+
+      .timeline::before {
+        left: 11px;
+      }
+
+      .timeline-item {
+        grid-template-columns: 25px 1fr;
+
+        gap: 14px;
+      }
+
+      .timeline-dot {
+        margin-left: 6px;
+      }
+
+      .timeline-content {
         padding: 20px;
       }
 
-      .card h3 {
-        font-size: 17px;
+      .documents-grid {
+        grid-template-columns: 1fr;
       }
 
-      .card p {
-        font-size: 13.5px;
+      .project {
+        min-height: 250px;
+
+        padding: 25px;
       }
 
-      .footer {
-        margin-top: 40px;
-      }
-    }
-
-
-    /* =========================
-       CELULARES PEQUEÑOS
-    ========================= */
-
-    @media (max-width: 380px) {
-
-      .container {
-        padding: 25px 16px;
-      }
-
-      .profile-img {
-        width: 140px;
-        height: 140px;
-        object-position: center 18%;
-      }
-
-      .profile-info h1 {
-        font-size: 26px;
-      }
-
-      .section h2 {
+      .project h3 {
         font-size: 20px;
       }
+
+      footer {
+        margin-top: 65px;
+      }
     }
+
+
+    /* =========================================================
+       MÓVIL MUY PEQUEÑO
+    ========================================================= */
+
+    @media (max-width: 390px) {
+
+      .nav-links {
+        gap: 8px;
+      }
+
+      .nav-links a {
+        font-size: 10px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .areas {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+
   </style>
 </head>
 
 
 <body>
 
-  <div class="container">
 
-    <!-- =========================
-         PERFIL
-    ========================= -->
+  <!-- =========================================================
+       NAVEGACIÓN
+  ========================================================= -->
 
-    <div class="header">
+  <nav class="navbar">
 
-      <div class="profile-column">
+    <div class="nav-inner">
 
-        <img
-          class="profile-img"
-          src="Imagen fondo azul.png"
-          alt="Fotografía de Daniel Betancur"
-        >
+      <a href="#inicio" class="brand">
+        Daniel <span>Betancur</span>
+      </a>
 
-        <p class="profile-details">
-          <strong>Estudiante de Economía</strong><br>
-          Universidad de los Llanos
-        </p>
+      <ul class="nav-links">
 
-      </div>
+        <li>
+          <a href="#perfil">Perfil</a>
+        </li>
 
+        <li>
+          <a href="#educacion">Educación</a>
+        </li>
 
-      <div class="profile-info">
+        <li>
+          <a href="#experiencia">Experiencia</a>
+        </li>
 
-        <h1>Daniel Betancur</h1>
+        <li>
+          <a href="#investigaciones">Investigación</a>
+        </li>
 
-        <span class="profile-role">
-          Economía · Investigación · Desarrollo territorial
-        </span>
-
-        <p>
-          Estudiante de Economía en proceso de grado de la Universidad de los Llanos,
-          con capacidades para la formulación y evaluación de proyectos, políticas
-          y procesos de desarrollo con enfoque territorial. Cuento con experiencia
-          en investigación aplicada a proyectos de ordenamiento territorial y
-          desarrollo regional sostenible, así como formación técnica en
-          contabilización de operaciones comerciales y financieras.
-          También cuento con experiencia en procesos administrativos y apoyo técnico,
-          gestión de informes financieros y procesos organizacionales.
-        </p>
-
-      </div>
+      </ul>
 
     </div>
 
+  </nav>
 
-    <!-- =========================
-         EDUCACIÓN
-    ========================= -->
 
-    <div class="section">
+  <main class="container">
 
-      <div class="section-header">
-        <h2>Educación</h2>
-        <div class="section-line"></div>
+
+    <!-- =======================================================
+         HERO
+    ======================================================= -->
+
+    <section class="hero" id="inicio">
+
+      <div class="hero-content">
+
+
+        <!-- FOTO -->
+
+        <div class="photo-wrapper">
+
+          <div class="photo-ring">
+
+            <img
+              class="profile-img"
+              src="Imagen fondo azul.png"
+              alt="Daniel Betancur"
+            >
+
+          </div>
+
+          <p class="photo-caption">
+            Economía<br>
+            Universidad de los Llanos
+          </p>
+
+        </div>
+
+
+        <!-- PRESENTACIÓN -->
+
+        <div>
+
+          <div class="eyebrow">
+            Portafolio profesional
+          </div>
+
+          <h1>
+            Daniel <span>Betancur</span>
+          </h1>
+
+          <p class="hero-description">
+
+            Estudiante de Economía en proceso de grado de la
+            Universidad de los Llanos, con interés y experiencia
+            en investigación, ordenamiento territorial y desarrollo
+            regional sostenible.
+
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#investigaciones" class="button button-primary">
+              Explorar investigaciones
+            </a>
+
+            <a href="#educacion" class="button button-secondary">
+              Ver formación
+            </a>
+
+          </div>
+
+        </div>
+
       </div>
 
 
-      <div class="card-container">
+      <!-- ÁREAS -->
 
-        <div class="card">
-          <div>
-            <h3>Certificado de Créditos</h3>
-            <p>
-              Acredita los créditos cursados y aprobados dentro del programa académico.
-            </p>
+      <div class="areas">
+
+        <div class="area">
+          <strong>Economía</strong>
+          <span>Análisis y formación académica</span>
+        </div>
+
+        <div class="area">
+          <strong>Investigación</strong>
+          <span>Análisis de información</span>
+        </div>
+
+        <div class="area">
+          <strong>Territorio</strong>
+          <span>Ordenamiento y desarrollo regional</span>
+        </div>
+
+        <div class="area">
+          <strong>Gestión</strong>
+          <span>Procesos administrativos y técnicos</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         PERFIL
+    ======================================================= -->
+
+    <section class="section" id="perfil">
+
+      <div class="section-heading">
+
+        <div>
+
+          <div class="section-label">
+            Sobre mí
           </div>
 
-          <a
-            href="soportes/educacion/certificado-creditos.pdf"
-            target="_blank"
-          >
-            Ver documento
-          </a>
+          <h2 class="section-title">
+            Perfil profesional
+          </h2>
+
+        </div>
+
+        <p class="section-description">
+          Una combinación entre formación económica,
+          análisis territorial y experiencia administrativa.
+        </p>
+
+      </div>
+
+
+      <div class="about-grid">
+
+
+        <div class="about-card">
+
+          <h3>
+            Formación y enfoque
+          </h3>
+
+          <p>
+
+            Cuento con formación en Economía y conocimientos
+            orientados al análisis de información, formulación
+            y evaluación de proyectos, procesos de desarrollo
+            territorial y desarrollo regional sostenible.
+
+            Mi experiencia académica y profesional me ha permitido
+            participar en procesos de investigación y elaboración
+            de insumos técnicos relacionados con el territorio,
+            complementando estas capacidades con conocimientos
+            administrativos, financieros y organizacionales.
+
+          </p>
+
         </div>
 
 
-        <div class="card">
-          <div>
-            <h3>Certificados ESG</h3>
-            <p>
-              Formación en estrategias de sostenibilidad y enfoque ESG.
-            </p>
-          </div>
+        <div class="about-card highlight-box">
 
-          <a
-            href="soportes/educacion/esg-estrategias-sostenibilidad.pdf"
-            target="_blank"
-          >
-            Ver documento
-          </a>
+          <h3>
+            Enfoque de trabajo
+          </h3>
+
+          <p>
+
+            Análisis de información, organización documental,
+            elaboración de insumos técnicos y apoyo a procesos
+            de investigación y gestión.
+
+          </p>
+
         </div>
 
 
-        <div class="card">
-          <div>
-            <h3>Introducción a la Econometría</h3>
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
+         EDUCACIÓN
+    ======================================================= -->
+
+    <section class="section" id="educacion">
+
+      <div class="section-heading">
+
+        <div>
+
+          <div class="section-label">
+            Formación
+          </div>
+
+          <h2 class="section-title">
+            Educación y certificaciones
+          </h2>
+
+        </div>
+
+        <p class="section-description">
+          Documentación académica y formación complementaria.
+        </p>
+
+      </div>
+
+
+      <div class="timeline">
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-tag">
+              Formación universitaria
+            </span>
+
+            <h3>
+              Economía · Universidad de los Llanos
+            </h3>
+
             <p>
-              Certificado académico en fundamentos de econometría,
+              Formación profesional en Economía, con énfasis
+              en herramientas de análisis económico, investigación
+              y comprensión de procesos de desarrollo territorial.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-tag">
+              Certificación académica
+            </span>
+
+            <h3>
+              Certificado de Créditos
+            </h3>
+
+            <p>
+              Acredita los créditos cursados y aprobados
+              dentro del programa académico.
+            </p>
+
+            <br>
+
+            <a
+              href="soportes/educacion/certificado-creditos.pdf"
+              target="_blank"
+              class="document-link"
+            >
+              Consultar documento →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-tag">
+              Formación complementaria
+            </span>
+
+            <h3>
+              Estrategias de sostenibilidad y enfoque ESG
+            </h3>
+
+            <p>
+              Formación complementaria relacionada con
+              sostenibilidad y criterios ambientales, sociales
+              y de gobernanza.
+            </p>
+
+            <br>
+
+            <a
+              href="soportes/educacion/esg-estrategias-sostenibilidad.pdf"
+              target="_blank"
+              class="document-link"
+            >
+              Consultar certificado →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-tag">
+              Formación complementaria
+            </span>
+
+            <h3>
+              Introducción a la Econometría
+            </h3>
+
+            <p>
+              Formación en fundamentos de econometría,
               análisis estadístico y modelos básicos.
             </p>
+
+            <br>
+
+            <a
+              href="soportes/educacion/introduccion-econometria.pdf"
+              target="_blank"
+              class="document-link"
+            >
+              Consultar certificado →
+            </a>
+
           </div>
 
-          <a
-            href="soportes/educacion/introduccion-econometria.pdf"
-            target="_blank"
-          >
-            Ver documento
-          </a>
         </div>
 
 
-        <div class="card">
-          <div>
-            <h3>Documentos Oficiales SENA</h3>
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-tag">
+              Formación técnica
+            </span>
+
+            <h3>
+              Documentos Oficiales SENA
+            </h3>
+
             <p>
-              Acta académica, certificado final y documento oficial
-              TCOCF del programa técnico.
+              Acta académica, certificado final y documento
+              oficial TCOCF correspondiente al programa técnico.
             </p>
+
+            <br>
+
+            <a
+              href="sena.html"
+              target="_blank"
+              class="document-link"
+            >
+              Ver documentación →
+            </a>
+
           </div>
 
-          <a
-            href="sena.html"
-            target="_blank"
-          >
-            Ver detalles
-          </a>
         </div>
 
+
       </div>
 
-    </div>
+    </section>
 
 
-    <!-- =========================
+
+    <!-- =======================================================
          EXPERIENCIA
-    ========================= -->
+    ======================================================= -->
 
-    <div class="section">
+    <section class="section" id="experiencia">
 
-      <div class="section-header">
-        <h2>Experiencia</h2>
-        <div class="section-line"></div>
+      <div class="section-heading">
+
+        <div>
+
+          <div class="section-label">
+            Trayectoria
+          </div>
+
+          <h2 class="section-title">
+            Experiencia
+          </h2>
+
+        </div>
+
+        <p class="section-description">
+          Experiencia en investigación, gestión administrativa
+          y apoyo técnico.
+        </p>
+
       </div>
 
 
-      <div class="card-container">
+      <div class="timeline">
 
-        <div class="card">
-          <div>
-            <h3>Pasantía en Investigación</h3>
+
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-tag">
+              Investigación
+            </span>
+
+            <h3>
+              Pasantía en Investigación
+            </h3>
+
             <p>
               Apoyo en procesos de investigación académica,
-              análisis de información y elaboración de insumos técnicos.
+              análisis de información y elaboración de insumos
+              relacionados con procesos territoriales y regionales.
             </p>
+
+            <br>
+
+            <a
+              href="soportes/experiencia/pasantia-investigacion.pdf"
+              target="_blank"
+              class="document-link"
+            >
+              Ver soporte →
+            </a>
+
           </div>
 
-          <a
-            href="soportes/experiencia/pasantia-investigacion.pdf"
-            target="_blank"
-          >
-            Ver documento
-          </a>
         </div>
 
 
-        <div class="card">
-          <div>
-            <h3>Apoyo Técnico Administrativo – Porfía 1</h3>
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-tag">
+              Gestión administrativa
+            </span>
+
+            <h3>
+              Apoyo Técnico Administrativo – Porfía 1
+            </h3>
+
             <p>
               Gestión administrativa y acompañamiento
               en asociaciones comunitarias.
             </p>
+
+            <br>
+
+            <a
+              href="soportes/experiencia/apoyo-tecnico-porfia-1.pdf"
+              target="_blank"
+              class="document-link"
+            >
+              Ver soporte →
+            </a>
+
           </div>
 
-          <a
-            href="soportes/experiencia/apoyo-tecnico-porfia-1.pdf"
-            target="_blank"
-          >
-            Ver documento
-          </a>
         </div>
 
 
-        <div class="card">
-          <div>
-            <h3>Apoyo Técnico Administrativo – Porfía 3</h3>
+        <div class="timeline-item">
+
+          <div class="timeline-dot"></div>
+
+          <div class="timeline-content">
+
+            <span class="timeline-tag">
+              Apoyo técnico
+            </span>
+
+            <h3>
+              Apoyo Técnico Administrativo – Porfía 3
+            </h3>
+
             <p>
-              Apoyo técnico y operativo en procesos institucionales
-              y administrativos.
+              Apoyo técnico y operativo en procesos
+              institucionales y administrativos.
             </p>
+
+            <br>
+
+            <a
+              href="soportes/experiencia/apoyo-tecnico-porfia-3.pdf"
+              target="_blank"
+              class="document-link"
+            >
+              Ver soporte →
+            </a>
+
           </div>
 
-          <a
-            href="soportes/experiencia/apoyo-tecnico-porfia-3.pdf"
-            target="_blank"
-          >
-            Ver documento
-          </a>
         </div>
+
 
       </div>
 
-    </div>
+    </section>
 
 
-    <!-- =========================
+
+    <!-- =======================================================
+         DOCUMENTACIÓN
+    ======================================================= -->
+
+    <section class="section">
+
+      <div class="section-heading">
+
+        <div>
+
+          <div class="section-label">
+            Soportes
+          </div>
+
+          <h2 class="section-title">
+            Documentación profesional
+          </h2>
+
+        </div>
+
+        <p class="section-description">
+          Acceso organizado a certificados y documentos
+          que respaldan la formación y experiencia.
+        </p>
+
+      </div>
+
+
+      <div class="documents-grid">
+
+
+        <div class="document-card">
+
+          <div class="document-number">
+            01
+          </div>
+
+          <h3>
+            Créditos académicos
+          </h3>
+
+          <p>
+            Certificación de créditos cursados y aprobados.
+          </p>
+
+          <a
+            href="soportes/educacion/certificado-creditos.pdf"
+            target="_blank"
+            class="document-link"
+          >
+            Abrir documento →
+          </a>
+
+        </div>
+
+
+        <div class="document-card">
+
+          <div class="document-number">
+            02
+          </div>
+
+          <h3>
+            Formación ESG
+          </h3>
+
+          <p>
+            Certificación relacionada con sostenibilidad
+            y enfoque ESG.
+          </p>
+
+          <a
+            href="soportes/educacion/esg-estrategias-sostenibilidad.pdf"
+            target="_blank"
+            class="document-link"
+          >
+            Abrir documento →
+          </a>
+
+        </div>
+
+
+        <div class="document-card">
+
+          <div class="document-number">
+            03
+          </div>
+
+          <h3>
+            Econometría
+          </h3>
+
+          <p>
+            Certificado de formación en econometría
+            y análisis estadístico.
+          </p>
+
+          <a
+            href="soportes/educacion/introduccion-econometria.pdf"
+            target="_blank"
+            class="document-link"
+          >
+            Abrir documento →
+          </a>
+
+        </div>
+
+
+        <div class="document-card">
+
+          <div class="document-number">
+            04
+          </div>
+
+          <h3>
+            Formación SENA
+          </h3>
+
+          <p>
+            Documentación académica y certificaciones
+            correspondientes al programa técnico.
+          </p>
+
+          <a
+            href="sena.html"
+            target="_blank"
+            class="document-link"
+          >
+            Ver documentación →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =======================================================
          INVESTIGACIONES
-    ========================= -->
+    ======================================================= -->
 
-    <div class="section">
+    <section class="section" id="investigaciones">
 
-      <div class="section-header">
-        <h2>Investigaciones</h2>
-        <div class="section-line"></div>
+      <div class="section-heading">
+
+        <div>
+
+          <div class="section-label">
+            Proyectos
+          </div>
+
+          <h2 class="section-title">
+            Investigación y desarrollo
+          </h2>
+
+        </div>
+
+        <p class="section-description">
+          Proyectos y contenidos relacionados con investigación,
+          territorio y desarrollo regional.
+        </p>
+
       </div>
 
 
-      <div class="card-container">
-
-        <div class="card">
-          <div>
-            <h3>Proyectos Investigativos</h3>
-            <p>
-              Acceso a investigaciones en ordenamiento territorial,
-              economía y desarrollo regional.
-            </p>
-          </div>
-
-          <a
-            href="investigaciones.html"
-            target="_blank"
-          >
-            Ver detalles
-          </a>
-        </div>
+      <div class="projects">
 
 
-        <div class="card">
-          <div>
-            <h3>Proyecto Ecohotel Los Arrendajos</h3>
-            <p>
-              Desarrollo integral del proyecto de turismo sostenible,
-              incluyendo planificación, análisis de mercado
-              y gestión de actores.
-            </p>
-          </div>
+        <!-- PROYECTO DESTACADO -->
+
+        <div class="project project-featured">
+
+          <small>
+            Proyecto destacado
+          </small>
+
+          <h3>
+            Proyecto Ecohotel Los Arrendajos
+          </h3>
+
+          <p>
+            Desarrollo integral de un proyecto de turismo
+            sostenible, incorporando elementos de planificación,
+            análisis de mercado y gestión de actores.
+          </p>
 
           <a
             href="fases-ecohotel.html"
             target="_blank"
           >
-            Ver detalles
+            Explorar proyecto →
           </a>
+
         </div>
+
+
+        <!-- INVESTIGACIONES -->
+
+        <div class="project">
+
+          <small>
+            Investigación
+          </small>
+
+          <h3>
+            Proyectos Investigativos
+          </h3>
+
+          <p>
+            Investigaciones relacionadas con ordenamiento
+            territorial, economía y desarrollo regional.
+          </p>
+
+          <a
+            href="investigaciones.html"
+            target="_blank"
+          >
+            Ver investigaciones →
+          </a>
+
+        </div>
+
 
       </div>
 
-    </div>
+    </section>
 
 
-    <!-- =========================
-         PIE DE PÁGINA
-    ========================= -->
 
-    <div class="footer">
-      Portafolio profesional · Daniel Betancur
-    </div>
+    <!-- =======================================================
+         FOOTER
+    ======================================================= -->
 
-  </div>
+    <footer>
 
-</body>
-</html>
-  </div>
+      <p>
+        <strong>Daniel Betancur</strong>
+        · Portafolio profesional
+      </p>
+
+      <p>
+        Economía · Investigación · Desarrollo territorial
+      </p>
+
+    </footer>
+
+
+  </main>
+
+
 </body>
 </html>
